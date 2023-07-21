@@ -1,0 +1,63 @@
+.home__hero {
+  background-color: #0099ff;
+}
+
+.home__hero-img {
+  max-height: 30vh;
+}
+
+.home__event-introduction {
+  background: url("../../assets/images/blurry_gradient.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home__event-name {
+  letter-spacing: 0.3rem;
+  font-family: "Oxanium", cursive;
+  text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
+}
+
+.home__quote--rotated {
+  transform: rotate(180deg);
+}
+
+.home__images {
+  max-height: 20vh;
+}
+
+.home__infographic-wrapper {
+  background: url("../../assets/images/stacked_waves.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home__partners {
+  overflow-x: auto;
+  gap: 10rem;
+
+  i {
+    font-size: 8rem;
+  }
+}
+
+.home__location {
+  background: #0099ff;
+}
+
+@media only screen and (min-width: 992px) {
+  .home__hero-img {
+    max-height: 40vh;
+  }
+
+  .home__infographic-info {
+    width: 65%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .home__images {
+    max-height: 40vh;
+  }
+}

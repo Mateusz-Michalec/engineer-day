@@ -1,0 +1,25 @@
+.home__infographic-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.home__infographic-info {
+  position: relative;
+  transform-style: preserve-3d;
+
+  &::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: inherit;
+    top: 10px;
+    left: 50%;
+    transform: rotate(45deg) translate(-50%) translateZ(-1px);
+  }
+}
