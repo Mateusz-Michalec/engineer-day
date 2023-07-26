@@ -1,5 +1,6 @@
+import { forwardRef } from "react";
 import "./HomeInfographic.scss";
-import { Col } from "react-bootstrap";
+import { Col, Stack } from "react-bootstrap";
 
 type PropsType = {
   title: string;
@@ -7,38 +8,38 @@ type PropsType = {
   circleNumber: string;
   circleText: string;
   desc: string;
-  imageRight?: boolean;
+  id: string;
 };
-const HomeInfographic = ({
-  title,
-  image,
-  circleNumber,
-  circleText,
-  desc,
-  imageRight,
-}: PropsType) => {
-  return (
-    <Col xs={12} lg={6} className="text-white">
-      <h2 className="fs-2 fw-bold gradient-underscore mb-5 lh-base">{title}</h2>
-      <div className="d-flex justify-content-center align-items-center gap-5">
-        <img
-          className={`home__images ${imageRight ? "order-1" : ""}`}
-          src={image}
-          alt={title}
-        />
-        <h3 className="fs-4 text-center d-flex flex-column justify-conent-center align-items-center gap-3">
-          <span className="fs-1 text-light bg-info home__infographic-number">
-            {" "}
-            {circleNumber}
-          </span>{" "}
-          {circleText}
-        </h3>
-      </div>
-      <p className="fs-5 mt-5 p-3 bg-info rounded home__infographic-info">
-        {desc}
-      </p>
-    </Col>
-  );
-};
+
+const HomeInfographic = forwardRef(
+  ({ title, image, circleNumber, circleText, desc, id }: PropsType, ref) => {
+    return (
+      <Col xs={12} ref={ref} id={id} className="text-white animation-delays">
+        <h2 className="hidden-opacity fs-2 fw-bold gradient-underscore mb-5 lh-base home__infographic-title">
+          {title}
+        </h2>
+        <Stack
+          direction="horizontal"
+          className="justify-content-center hidden-x-left"
+        >
+          <object data={image} className={"home__images"} type="image/svg+xml">
+            <img src={image} className={"home__images"} alt={title} />
+          </object>
+
+          <h3 className="fs-4 text-center d-flex flex-column justify-conent-center align-items-center gap-3">
+            <span className="fs-1 shadow-lg text-light home__infographic-number">
+              {" "}
+              {circleNumber}
+            </span>{" "}
+            <span className="home__infographic-text">{circleText}</span>
+          </h3>
+        </Stack>
+        <p className="hidden-y-bottom fs-5 mt-5 p-3 rounded home__infographic-info">
+          {desc}
+        </p>
+      </Col>
+    );
+  }
+);
 
 export default HomeInfographic;

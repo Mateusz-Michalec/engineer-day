@@ -1,9 +1,9 @@
+@import "./assets/variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Poppins:wght@400;500;700&display=swap");
 
 // RESET
-
 *,
 *::after,
 *::before {
@@ -17,16 +17,25 @@
 body,
 html {
   font-family: "Poppins", sans-serif;
+  color: $text-color;
+  background: $neutral-color;
 }
 
 a {
   text-decoration: none;
+  color: white;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    color: $accent-color-1;
+  }
 }
 
 // UNIVERSAL
 
 .gradient-underscore {
   position: relative;
+  width: fit-content;
 
   &::after {
     content: "";
@@ -35,17 +44,11 @@ a {
     left: 0;
     width: 100%;
     height: 0.3rem;
-    background: #b92b27; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #1565c0,
-      #b92b27
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #1565c0,
-      rgba(185, 43, 39, 0)
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 0, 0, 0),
+      $accent-color-2
+    );
     border-radius: 0.3rem;
   }
 }
@@ -53,5 +56,61 @@ a {
 // BOOTSTRAP OVERWRITING
 
 .container {
-  max-width: 1000px !important;
+  max-width: 900px !important;
+}
+
+// ANIMATIONS (for intersection observer)
+
+.hidden-x-left {
+  opacity: 0;
+  transform: translateX(-30%);
+}
+
+.hidden-x-right {
+  opacity: 0;
+  transform: translateX(30%);
+}
+
+.hidden-y-top {
+  opacity: 0;
+  transform: translateY(-30%);
+}
+
+.hidden-y-bottom {
+  opacity: 0;
+  transform: translateY(30%);
+}
+
+.hidden-opacity {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+}
+
+.animation-delays {
+  :nth-child(2) {
+    animation-delay: 300ms;
+  }
+  :nth-child(3) {
+    animation-delay: 600ms;
+  }
+  :nth-child(4) {
+    animation-delay: 900ms;
+  }
+  :nth-child(5) {
+    animation-delay: 1200ms;
+  }
 }
