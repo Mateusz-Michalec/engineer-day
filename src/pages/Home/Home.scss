@@ -1,34 +1,83 @@
+@import "../../assets/variables.scss";
+
+.home__wave {
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
 .home__hero {
-  background-color: #0099ff;
+  background-color: $light-shade;
 }
 
 .home__hero-img {
-  max-height: 30vh;
+  max-height: 230px;
 }
 
 .home__event-introduction {
   background: url("../../assets/images/blurry_gradient.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  :not(i) {
+    text-shadow: $text-shadow-sm;
+  }
 }
 
 .home__event-name {
   letter-spacing: 0.3rem;
   font-family: "Oxanium", cursive;
-  text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
+  text-shadow: $text-shadow-hero;
 }
 
-.home__quote--rotated {
-  transform: rotate(180deg);
+.home__quote {
+  animation: pulse 2s alternate infinite;
+  transition: all 0.3s ease-in-out;
+  color: $accent-color-1;
+  &--rotated {
+    animation: pulse--rotated 2s alternate infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes pulse--rotated {
+  0% {
+    transform: scale(1) rotate(180deg);
+  }
+  100% {
+    transform: scale(1.2) rotate(180deg);
+  }
 }
 
 .home__images {
-  max-height: 20vh;
+  max-height: 150px;
+
+  &--small {
+    max-height: 220px;
+  }
+}
+
+.woman-sitting {
+  position: absolute;
+  top: -145px;
+  right: -55px;
+}
+
+.man-with-map {
+  left: -180px;
 }
 
 .home__infographic-wrapper {
   background: url("../../assets/images/stacked_waves.svg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -42,14 +91,14 @@
 }
 
 .home__location {
-  background: #0099ff;
+  background-color: $primary-color;
+
+  .home__location-desc {
+    line-height: $lh-desc;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-  .home__hero-img {
-    max-height: 40vh;
-  }
-
   .home__infographic-info {
     width: 65%;
     margin: auto;
