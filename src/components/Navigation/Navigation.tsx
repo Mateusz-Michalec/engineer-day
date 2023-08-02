@@ -1,20 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Button, Stack } from "react-bootstrap";
 import "./Navigation.scss";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
-  // Do we want styling depending on a page?
-  // type PagesType = "home" | "exhibitions" | "speakers" | "map";
-
-  // const [currentPage, setCurrentPage] = useState("home");
-  // console.log(currentPage);
-
-  // useEffect(() => {
-  //   const path = location.pathname.split("/");
-  //   setCurrentPage(path[path.length - 1]);
-  // }, [location.pathname]);
-
   return (
     <nav className="navigation shadow-lg d-flex">
       <i className="display-4 top-50 translate-middle d-none text-white d-lg-block bi bi-chevron-double-right position-absolute"></i>
