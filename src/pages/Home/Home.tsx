@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Col, Container, Row, Stack } from "react-bootstrap";
+import { Container, Row, Stack } from "react-bootstrap";
 import { images } from "../../constants";
 import "./Home.scss";
 import HomeInfographic from "../../components/HomeInfographic/HomeInfographic";
@@ -9,7 +9,6 @@ import { showElement, showGroupElements } from "../../utils/animate";
 
 const Home = () => {
   // Refs
-
   const hero = useRef<HTMLDivElement>(null);
   const introduction = useRef<HTMLElement>(null);
   const exhibitors = useRef();
@@ -38,27 +37,26 @@ const Home = () => {
   return (
     <Stack className="home" gap={5}>
       <section>
-        <div className="home__hero">
-          <Container className="pt-4 text-center">
-            <div
-              ref={hero}
-              id="hero"
-              className="hidden-opacity d-flex flex-column flex-lg-row gap-3 align-items-center"
-            >
-              <object
-                data={images.hero_engineer}
-                className="home__hero-img"
-                type="image/svg+xml"
-              />
-              <header className="text-white">
-                <h1 className="home__event-name fw-bold display-4 lh-sm text-uppercase">
-                  Radomski Dzień Inżyniera 2023
-                </h1>
-                <h2 className="fs-5 mb-0">17 października Hala RCS Radom</h2>
-              </header>
-            </div>
-          </Container>
-        </div>
+        <Container className="pt-4 text-center home__hero">
+          <div
+            ref={hero}
+            id="hero"
+            className="hidden-opacity d-flex flex-column flex-lg-row gap-3 align-items-center"
+          >
+            <object
+              data={images.hero_engineer}
+              className="home__hero-img"
+              type="image/svg+xml"
+            />
+            <header className="text-white">
+              <h1 className="home__event-name fw-bold display-4 lh-sm text-uppercase">
+                Radomski Dzień Inżyniera 2023
+              </h1>
+              <h2 className="fs-5 mb-0">17 października Hala RCS Radom</h2>
+            </header>
+          </div>
+        </Container>
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 220"
@@ -184,7 +182,7 @@ const Home = () => {
           ></path>
         </svg>
         <div className="home__location px-4">
-          <Container>
+          <Container className="px-0">
             <header>
               <Stack ref={location} id="location" gap={5}>
                 <div className="hidden-opacity mx-auto">
