@@ -1,68 +1,95 @@
 @import "../../assets/variables.scss";
 
-.home__wave {
-  margin-top: -1px;
-  margin-bottom: -1px;
-}
+.home {
+  &__hero {
+    background-color: $light-shade;
 
-.home__hero {
-  background-color: $light-shade;
-}
+    &-img {
+      max-height: 230px;
+    }
 
-.home__hero-img {
-  max-height: 230px;
-}
+    &-title {
+      letter-spacing: 0.3rem;
+      font-family: "Oxanium", cursive;
+      text-shadow: $text-shadow-hero;
+    }
+  }
 
-.home__event-introduction {
-  background: url("../../assets/images/blurry_gradient.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  &__wave {
+    margin-top: -1px;
+    margin-bottom: -1px;
+  }
 
-  :not(i) {
-    text-shadow: $text-shadow-sm;
+  &__event-introduction {
+    background: url("../../assets/images/blurry_gradient.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    :not(i) {
+      text-shadow: $text-shadow-sm;
+    }
+  }
+
+  &__quote {
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes pulse--rotated {
+      0% {
+        transform: scale(1) rotate(180deg);
+      }
+      100% {
+        transform: scale(1.2) rotate(180deg);
+      }
+    }
+    animation: pulse 2s alternate infinite;
+    transition: all 0.3s ease-in-out;
+    color: $accent-color-1;
+    &--rotated {
+      animation: pulse--rotated 2s alternate infinite;
+    }
+  }
+
+  &__images {
+    max-height: 150px;
+
+    &--small {
+      max-height: 230px;
+    }
+  }
+
+  &__infographics {
+    background: url("../../assets/images/stacked_waves.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__partners {
+    overflow-x: auto;
+    gap: 10rem;
+
+    i {
+      font-size: 8rem;
+    }
+  }
+
+  &__location {
+    background-color: $primary-color;
+
+    &-desc {
+      line-height: $lh-desc;
+    }
   }
 }
 
-.home__event-name {
-  letter-spacing: 0.3rem;
-  font-family: "Oxanium", cursive;
-  text-shadow: $text-shadow-hero;
-}
-
-.home__quote {
-  animation: pulse 2s alternate infinite;
-  transition: all 0.3s ease-in-out;
-  color: $accent-color-1;
-  &--rotated {
-    animation: pulse--rotated 2s alternate infinite;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.2);
-  }
-}
-
-@keyframes pulse--rotated {
-  0% {
-    transform: scale(1) rotate(180deg);
-  }
-  100% {
-    transform: scale(1.2) rotate(180deg);
-  }
-}
-
-.home__images {
-  max-height: 150px;
-
-  &--small {
-    max-height: 220px;
-  }
-}
+// images only in desktop view
 
 .woman-sitting {
   position: absolute;
@@ -72,30 +99,6 @@
 
 .man-with-map {
   left: -180px;
-}
-
-.home__infographic-wrapper {
-  background: url("../../assets/images/stacked_waves.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.home__partners {
-  overflow-x: auto;
-  gap: 10rem;
-
-  i {
-    font-size: 8rem;
-  }
-}
-
-.home__location {
-  background-color: $primary-color;
-
-  .home__location-desc {
-    line-height: $lh-desc;
-  }
 }
 
 @media only screen and (min-width: 992px) {

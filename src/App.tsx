@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import Exhibitions from "./pages/Exhibitions/Exhibitions";
 import Speakers from "./pages/Speakers/Speakers";
 import "./App.scss";
+import SpeakerDetails from "./pages/Speakers/SpeakerDetails";
 
 function App() {
   return (
@@ -11,7 +12,10 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="exhibitions" element={<Exhibitions />} />
-        <Route path="speakers" element={<Speakers />} />
+        <Route path="speakers">
+          <Route index element={<Speakers />} />
+          <Route path=":id" element={<SpeakerDetails />} />
+        </Route>
         <Route path="*" element={<Layout />} />
       </Route>
     </Routes>
