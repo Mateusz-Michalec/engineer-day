@@ -22,10 +22,7 @@ const HomeInfographic = forwardRef(
           direction="horizontal"
           className="justify-content-center hidden-x-left"
         >
-          <object data={image} className={"home__images"} type="image/svg+xml">
-            <img src={image} className={"home__images"} alt={title} />
-          </object>
-
+          <img src={image} className="home__images" alt={title} />
           <h3 className="fs-4 text-center d-flex flex-column justify-conent-center align-items-center gap-3">
             <span className="fs-1 shadow-lg text-light home__infographic-number">
               {" "}

@@ -37,26 +37,25 @@ const Home = () => {
   return (
     <Stack className="home" gap={5}>
       <section>
-        <Container className="pt-4 text-center home__hero">
-          <div
+        <div className="home__hero pt-4 text-center">
+          <Container
             ref={hero}
             id="hero"
             className="hidden-opacity d-flex flex-column flex-lg-row gap-3 align-items-center"
           >
-            <object
-              data={images.hero_engineer}
+            <img
+              src={images.hero_engineer}
               className="home__hero-img"
-              type="image/svg+xml"
+              alt="Inżynier na tle maista"
             />
             <header className="text-white">
-              <h1 className="home__event-name fw-bold display-4 lh-sm text-uppercase">
+              <h1 className="home__hero-title fw-bold display-4 lh-sm text-uppercase">
                 Radomski Dzień Inżyniera 2023
               </h1>
-              <h2 className="fs-5 mb-0">17 października Hala RCS Radom</h2>
+              <h2 className="mb-0 fs-3">17 października Hala RCS Radom</h2>
             </header>
-          </div>
-        </Container>
-
+          </Container>
+        </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 220"
@@ -76,7 +75,7 @@ const Home = () => {
             <h3 className="fs-1 mb-5 fw-bold hidden-x-left">
               Czym jest Radomski Dzień Inżyniera?
             </h3>
-            <div className="hidden-opacity rounded p-3 fs-5 text-white home__event-introduction position-relative">
+            <div className="hidden-opacity rounded p-3 text-white home__event-introduction position-relative">
               <i className="bi bi-quote d-inline-block fs-1 home__quote" />{" "}
               <br />
               <p>
@@ -92,10 +91,10 @@ const Home = () => {
               <div className="text-end">
                 <i className="bi bi-quote d-inline-block fs-1 home__quote home__quote--rotated" />
               </div>{" "}
-              <object
-                data={images.home_woman_sitting}
+              <img
                 className="d-none d-lg-block home__images--small woman-sitting"
-                type="image/svg+xml"
+                src={images.home_woman_sitting}
+                alt="Siedząca kobieta z laptopem"
               />
             </div>
           </header>
@@ -111,9 +110,9 @@ const Home = () => {
             d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
         </svg>
-        <Container fluid className="home__infographic-wrapper">
+        <div className="home__infographics">
           <Container>
-            <Row className="mt-0 gy-5">
+            <Row className="mt-0 gy-5 px-4">
               <HomeInfographic
                 ref={exhibitors}
                 id="exhibitors"
@@ -125,7 +124,6 @@ const Home = () => {
                   "Przedsiębiorstwa i firmy technologiczne zaprezentują swoje produkty i rozwiązania, dając możliwość zapoznania się z najnowszymi trendami w świecie inżynierii."
                 }
               />
-
               <HomeInfographic
                 ref={speakers}
                 id="speakers"
@@ -139,7 +137,7 @@ const Home = () => {
               />
             </Row>
           </Container>
-        </Container>
+        </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 260"
@@ -191,7 +189,7 @@ const Home = () => {
                   </h2>
                   <Stack direction="horizontal">
                     <i className="fs-1 rounded p-4 bi bi-geo-alt-fill " />
-                    <Stack className="fs-5" gap={2}>
+                    <Stack gap={2}>
                       <span>Hala RCS</span>
                       <span>ul. Andrzeja Struga 63</span>
                       <span>26-600, Radom</span>
@@ -205,13 +203,13 @@ const Home = () => {
                     src={images.hala_rcs}
                     alt="Hala RCS Radom"
                   />
-                  <object
-                    data={images.home_map}
+                  <img
                     className="d-none d-lg-block home__images--small man-with-map position-absolute bottom-0"
-                    type="image/svg+xml"
+                    src={images.home_map}
+                    alt="Mężczyzna przyglądający się mapie"
                   />
                 </div>
-                <p className="mb-0 fs-5 home__location-desc hidden-opacity">
+                <p className="mb-0 home__location-desc hidden-opacity">
                   <strong>
                     <Link to="https://www.rcs.radom.pl/">
                       Radomskie Centrum Sportu

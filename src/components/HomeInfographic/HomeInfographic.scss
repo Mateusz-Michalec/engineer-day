@@ -1,41 +1,43 @@
 @import "../../assets/variables.scss";
 
-.home__infographic-title {
-  text-shadow: $text-shadow-sm;
-}
+.home {
+  &__infographic-title {
+    text-shadow: $text-shadow-sm;
+  }
 
-.home__infographic-number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  background-color: $accent-color-1;
-}
+  &__infographic-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: $accent-color-1;
+  }
 
-.home__infographic-text {
-  text-shadow: $text-shadow-sm;
-}
+  &__infographic-text {
+    text-shadow: $text-shadow-sm;
+  }
 
-.home__infographic-info {
-  position: relative;
-  background-color: $accent-color-2;
-  text-shadow: $text-shadow-sm;
-  line-height: $lh-desc;
-  box-shadow: $box-shadow-1;
+  &__infographic-info {
+    position: relative;
+    background-color: $accent-color-2;
+    text-shadow: $text-shadow-sm;
+    line-height: $lh-desc;
+    box-shadow: $box-shadow-1;
 
-  &::after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 18px solid transparent;
-    border-bottom: 18px solid transparent;
-    border-right: 18px solid $accent-color-2;
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: rotate(90deg) translate(-50%);
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 18px solid transparent;
+      border-bottom: 18px solid transparent;
+      border-right: 18px solid $accent-color-2;
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: rotate(90deg) translate(-50%);
+    }
   }
 }
