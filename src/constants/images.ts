@@ -9,6 +9,8 @@ import male_avatar from '../assets/images/male_avatar.svg'
 import speakers_hero from '../assets/images/speakers_hero.svg'
 import exhibitions_hero from '../assets/images/exhibitions_hero.svg'
 import exhibitions_map from '../assets/images/exhibitions_map.png'
+import exhibitions_logo_uth from '../assets/images/logo_uth.jpg'
+import exhibitions_logo_radom from '../assets/images/logo_radom.jpg'
 
 export default {
 	hero_engineer,
@@ -22,4 +24,6 @@ export default {
 	speakers_hero,
 	exhibitions_hero,
 	exhibitions_map,
+	exhibitions_logo_uth,
+	exhibitions_logo_radom,
 }
