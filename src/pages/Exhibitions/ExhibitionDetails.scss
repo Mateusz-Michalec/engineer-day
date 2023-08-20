@@ -1,0 +1,33 @@
+.exhibition-details {
+	&__img {
+		max-height: 300px;
+	}
+
+	&__title {
+		font-size: 20px;
+	}
+
+	&__address {
+		font-size: 16px;
+	}
+
+	&__description {
+		font-size: 14px;
+	}
+}
+
+@media (min-width:768px) {
+  .exhibition-details {
+    &__title {
+      font-size: 22px;
+    }
+  
+    &__address {
+      font-size: 17px;
+    }
+  
+    &__description {
+      font-size: 14px;
+    }
+  }
+}

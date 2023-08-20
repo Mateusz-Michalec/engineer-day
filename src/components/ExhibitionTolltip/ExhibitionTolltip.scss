@@ -1,0 +1,63 @@
+@import '../../assets/variables.scss';
+.tolltip {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 180px;
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+	border: 1px solid gray;
+	border-radius: 5px;
+	background: white;
+	box-shadow: 1px 1px 0px gray;
+	transition: transform 0.3s;
+	z-index: 10;
+
+	&-logo {
+		width: 100px;
+	}
+
+	&-title {
+		text-align: center;
+		font-size: 13px;
+	}
+
+	&-link {
+		font-size: 10px;
+		color: $primary-color;
+		text-align: center;
+		transition: font-weight 0.3s;
+
+		&:hover {
+			color: $dark-shade;
+			font-weight: bold;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.tolltip {
+		top: 49%;
+		left: 50%;
+		width: 280px;
+		height: 250px;
+		&-logo {
+			width: 150px;
+		}
+		&-title {
+			font-size: 16px;
+		}
+
+		&-link {
+			font-size: 12px;
+		}
+	}
+}
+
+.active {
+	display: flex;
+}

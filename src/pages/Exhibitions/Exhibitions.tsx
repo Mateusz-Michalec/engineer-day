@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
-import { Col, Container, Row, Button } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import './Exhibitions.scss'
 import { images } from '../../constants'
 import useInView from '../../hooks/useInView'
 import { showElement } from '../../utils/animate'
-import { Link } from 'react-router-dom'
+import ExhibitionTolltip from '../../components/ExhibitionTolltip/ExhibitionTolltip'
 
 const Exhibitions = () => {
 	const [tooltipVisible, setTooltipVisible] = useState<number | null>(null)
@@ -103,19 +103,12 @@ const Exhibitions = () => {
 									onClick={() => setTooltipVisible(index)}>
 									<p className='exhibitions__map-dot-index'>{index + 1}</p>
 								</div>
-								<div className={`exhibitions__map-dot-tolltip ${tooltipVisible === index ? 'active' : ''}`}>
-									<img
-										className='exhibitions__map-dot-tolltip-logo'
-										src={index % 2 === 0 ? images.exhibitions_logo_uth : images.exhibitions_logo_radom}
-										alt='Logo firmy'
-									/>
-									<p className='exhibitions__map-dot-tolltip-title'>
-										{index % 2 === 0 ? 'Uniwersytet Radomski' : 'Urząd miejski w Radomiu'}
-									</p>
-									<Link to={'/'}>
-										<p className='exhibitions__map-dot-tolltip-link'>Dowiedz się więcej...</p>
-									</Link>
-								</div>
+								<ExhibitionTolltip
+									status={tooltipVisible === index ? true : false}
+									index={index}
+									img={index % 2 === 0 ? images.exhibitions_logo_uth : images.exhibitions_logo_radom}
+									title={index % 2 === 0 ? 'Uniwersytet Radomski' : 'Urząd miejski w Radomiu'}
+								/>
 							</>
 						))}
 					</div>
