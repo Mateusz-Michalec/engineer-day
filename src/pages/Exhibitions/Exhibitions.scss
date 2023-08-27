@@ -29,6 +29,10 @@
 			height: 100%;
 		}
 
+		.desktop-dots {
+			display: none;
+		}
+
 		&-dot {
 			position: absolute;
 			width: 35px;
@@ -51,6 +55,14 @@
 				line-height: 35px;
 				text-align: center;
 			}
+
+			&.active {
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				transform: scale(1.3);
+				background-color: $accent-color-1;
+			}
 		}
 	}
 
@@ -60,6 +72,12 @@
 				.overflow {
 					width: 100%;
 					overflow-x: auto;
+				}
+				.desktop-dots {
+					display: block;
+				}
+				.mobile-dots {
+					display: none;
 				}
 				&-photo {
 					width: 100%;
