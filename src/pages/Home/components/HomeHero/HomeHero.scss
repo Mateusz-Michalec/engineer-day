@@ -1,0 +1,17 @@
+@import "../../../../assets/variables.scss";
+
+.home {
+  &__hero {
+    background-color: $light-shade;
+
+    &-img {
+      max-height: 230px;
+    }
+
+    &-title {
+      letter-spacing: 0.3rem;
+      font-family: "Oxanium", cursive;
+      text-shadow: $text-shadow-hero;
+    }
+  }
+}

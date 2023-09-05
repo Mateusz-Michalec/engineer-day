@@ -1,0 +1,10 @@
+.home {
+  &__partners {
+    overflow-x: auto;
+    gap: 10rem;
+
+    i {
+      font-size: 8rem;
+    }
+  }
+}
