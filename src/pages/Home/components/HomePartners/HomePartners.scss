@@ -1,0 +1,18 @@
+@import "../../../../assets/variables.scss";
+
+.home {
+  &__partners {
+    overflow-x: auto;
+  }
+
+  &__partner {
+    a {
+      color: $text-color;
+    }
+
+    &-img {
+      max-height: 120px;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../../../assets/variables.scss";
+
+.home {
+  &__location {
+    background-color: $primary-color;
+
+    &-desc {
+      line-height: $lh-desc;
+    }
+  }
+}
