@@ -1,24 +1,11 @@
 @import "../../assets/variables.scss";
 
 .home {
-  &__wave {
-    margin-top: -1px;
-    margin-bottom: -1px;
-  }
-
   &__images {
     max-height: 150px;
 
     &--small {
       max-height: 230px;
-    }
-  }
-
-  &__location {
-    background-color: $primary-color;
-
-    &-desc {
-      line-height: $lh-desc;
     }
   }
 }

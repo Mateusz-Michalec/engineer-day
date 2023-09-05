@@ -12,11 +12,7 @@ type PropsType = {
 const HomeInfographics = ({ ids, refsArray }: PropsType) => {
   return (
     <section>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        className="home__wave"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#004cbb"
           fillOpacity="1"
@@ -25,11 +21,26 @@ const HomeInfographics = ({ ids, refsArray }: PropsType) => {
       </svg>
       <div className="home__infographics">
         <Container>
-          <Row className="mt-0 gy-5 px-4">
+          <header className="mb-5 text-white text-center">
+            <h2 className="fs-1 fw-bold">Program wydarzenia</h2>
+            <p>9.00 - 15.00</p>
+          </header>
+          <Row className="gap-5">
             <HomeInfographic
               ref={refsArray[0]}
               id={ids[0]}
-              title={"Strefa wystawców"}
+              title={"Wystąpienia prelegentów na scenie (30 minut)"}
+              image={images.home_speakers}
+              circleNumber={"8"}
+              circleText={"prelegentów"}
+              desc={
+                "Czołowi przedstawiciele branży inżynierskiej podzielą się swoimi doświadczeniami, wiedzą i przemyśleniami na temat najnowszych osiągnięć w dziedzinie technologii, innowacji i projektowania."
+              }
+            />
+            <HomeInfographic
+              ref={refsArray[1]}
+              id={ids[1]}
+              title={"Strefa wystawców (60 minut)"}
               image={images.home_ehxibitors}
               circleNumber={"20"}
               circleText={"wystawców"}
@@ -38,14 +49,14 @@ const HomeInfographics = ({ ids, refsArray }: PropsType) => {
               }
             />
             <HomeInfographic
-              ref={refsArray[1]}
-              id={ids[1]}
-              title={"Prelekcje i panele dyskusyjne"}
-              image={images.home_speakers}
-              circleNumber={"8"}
-              circleText={"prelegentów"}
+              ref={refsArray[2]}
+              id={ids[2]}
+              title={"Warsztaty dla doradców zawodowych "}
+              image={images.home_learning}
+              circleNumber={"10"}
+              circleText={"wykładowców"}
               desc={
-                "Czołowi przedstawiciele branży inżynierskiej podzielą się swoimi doświadczeniami, wiedzą i przemyśleniami na temat najnowszych osiągnięć w dziedzinie technologii, innowacji i projektowania."
+                "Interaktywne warsztaty dedykowane doradcom zawodowym. Podczas naszych zajęć uczestnicy zgłębią najnowsze techniki i narzędzia wykorzystywane w doradztwie, będą miały okazję wymienić się doświadczeniami i spostrzeżeniami z branży oraz rozwijać swoje kompetencje interpersonalne. "
               }
             />
           </Row>

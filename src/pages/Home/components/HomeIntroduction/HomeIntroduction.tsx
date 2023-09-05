@@ -11,7 +11,7 @@ const HomeIntroduction = forwardRef<HTMLDivElement, PropsType>(
     return (
       <article className="container" ref={ref} id={id}>
         <header className="hidden-x-left">
-          <h3 className="fs-1 mb-5 fw-bold ">
+          <h3 className="fs-1 mb-5 fw-bold text-center text-lg-start ">
             Czym jest Radomski Dzień Inżyniera?
           </h3>
         </header>

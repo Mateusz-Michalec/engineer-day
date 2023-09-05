@@ -29,11 +29,7 @@ const HomeHero = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
           </header>
         </Container>
       </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 220"
-        className="home__wave"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
         <path
           fill="#4b7fd9"
           fillOpacity="1"

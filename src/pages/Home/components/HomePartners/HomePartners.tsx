@@ -1,6 +1,8 @@
 import React, { forwardRef } from "react";
 import "./HomePartners.scss";
-import { Stack } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
+import { images } from "../../../../constants";
+import { Link } from "react-router-dom";
 
 type PropsType = {
   id: string;
@@ -12,19 +14,27 @@ const HomePartners = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
       <h2 className="hidden-opacity fs-1 mb-5 fw-bold text-center">
         Współorganizatorzy
       </h2>
-      <Stack
-        direction="horizontal"
-        className="hidden-y-top no-wrap home__partners justify-content-center"
-      >
-        <i className="bi bi-facebook" />
-        <i className="bi bi-twitch" />
-        <i className="bi bi-twitter" />
-        <i className="bi bi-youtube" />
-        <i className="bi bi-facebook" />
-        <i className="bi bi-twitch" />
-        <i className="bi bi-twitter" />
-        <i className="bi bi-youtube" />
-      </Stack>
+      <Row className="hidden-y-top home__partners gy-5">
+        {images.partners.map((partner) => (
+          <Col
+            key={partner.name}
+            xs={partner.name.length > 30 ? 12 : 6}
+            className="home__partner"
+          >
+            <Link
+              to={partner.link}
+              className="d-flex flex-column align-items-center text-center"
+            >
+              <img
+                src={partner.img}
+                alt={partner.alt}
+                className="home__partner-img"
+              />
+              <span>{partner.name}</span>
+            </Link>
+          </Col>
+        ))}
+      </Row>
     </section>
   );
 });
