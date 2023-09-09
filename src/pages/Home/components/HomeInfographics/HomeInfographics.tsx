@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { images } from "../../../../constants";
 import "./HomeInfographics.scss";

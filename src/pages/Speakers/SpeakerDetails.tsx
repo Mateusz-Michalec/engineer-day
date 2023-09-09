@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Button, Container, Stack } from "react-bootstrap";
 import { images } from "../../constants";
 import "./SpeakerDetails.scss";

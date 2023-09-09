@@ -1,8 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import { Container, Row, Stack } from "react-bootstrap";
-import { images } from "../../constants";
+import { useEffect, useRef } from "react";
+import { Stack } from "react-bootstrap";
 import "./Home.scss";
-import { Link } from "react-router-dom";
 import useInView from "../../hooks/useInView";
 import { showElement, showGroupElements } from "../../utils/animate";
 import HomeHero from "./components/HomeHero/HomeHero";

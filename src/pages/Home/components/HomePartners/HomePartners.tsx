@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import "./HomePartners.scss";
 import { Row, Col } from "react-bootstrap";
 import { images } from "../../../../constants";

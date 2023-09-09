@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import "./HomeLocation.scss";
 import { Container, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
