@@ -2,7 +2,8 @@
 
 .home {
   &__images {
-    max-height: 150px;
+    max-height: 180px;
+    max-width: 50%;
 
     &--small {
       max-height: 230px;

@@ -21,7 +21,11 @@ const HomeInfographics = ({ ids, refsArray }: PropsType) => {
       </svg>
       <div className="home__infographics">
         <Container>
-          <header className="mb-5 text-white text-center">
+          <header
+            id={ids[3]}
+            ref={refsArray[3]}
+            className="mb-5 text-white home__infographic-title text-center hidden-opacity"
+          >
             <h2 className="fs-1 fw-bold">Program wydarzenia</h2>
             <p>9.00 - 15.00</p>
           </header>

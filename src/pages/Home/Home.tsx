@@ -18,10 +18,12 @@ const Home = () => {
   const infographic3 = useRef<HTMLDivElement>(null);
   const partners = useRef<HTMLDivElement>(null);
   const location = useRef<HTMLDivElement>(null);
+  const infographicTitle = useRef<HTMLDivElement>(null);
 
   const intersection = useInView([
     hero,
     introduction,
+    infographicTitle,
     infographic1,
     infographic2,
     infographic3,
@@ -32,6 +34,7 @@ const Home = () => {
   useEffect(() => {
     if (intersection.hero) showElement(hero);
     if (intersection.introduction) showGroupElements(introduction);
+    if (intersection.infographicTitle) showElement(infographicTitle);
     if (intersection.infographic1) showGroupElements(infographic1);
     if (intersection.infographic2) showGroupElements(infographic2);
     if (intersection.infographic3) showGroupElements(infographic3);
@@ -44,8 +47,13 @@ const Home = () => {
       <HomeHero ref={hero} id="hero" />
       <HomeIntroduction ref={introduction} id="introduction" />
       <HomeInfographics
-        ids={["infographic1", "infographic2", "infographic3"]}
-        refsArray={[infographic1, infographic2, infographic3]}
+        ids={[
+          "infographic1",
+          "infographic2",
+          "infographic3",
+          "infographicTitle",
+        ]}
+        refsArray={[infographic1, infographic2, infographic3, infographicTitle]}
       />
       <HomePartners id={"partners"} ref={partners} />
       <HomeLocation id={"location"} ref={location} />

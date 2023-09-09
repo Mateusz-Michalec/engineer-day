@@ -9,8 +9,8 @@ $text-color: #2f2e41;
 $disabled-color: #bdbdbd;
 
 // text-shadow
-$text-shadow-sm: 3px 4px 7px rgba(66, 68, 90, 1);
-$text-shadow-hero: 2px 2px 3px rgba(66, 68, 90, 1);
+$text-shadow-sm: 1px 1px 6px $text-color;
+$text-shadow-hero: 2px 2px 3px $text-color;
 
 // box-shadow
 $box-shadow-1: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
