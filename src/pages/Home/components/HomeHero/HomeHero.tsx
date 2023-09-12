@@ -10,7 +10,7 @@ type PropsType = {
 const HomeHero = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
   return (
     <section>
-      <div className="home__hero pt-4 text-center">
+      <div className="home__hero text-center">
         <Container
           ref={ref}
           id={id}

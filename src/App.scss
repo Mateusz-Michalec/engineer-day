@@ -121,3 +121,9 @@ a {
     animation-delay: 1200ms;
   }
 }
+
+@media screen and (min-width: 992px) {
+  #root {
+    padding-bottom: 0;
+  }
+}
