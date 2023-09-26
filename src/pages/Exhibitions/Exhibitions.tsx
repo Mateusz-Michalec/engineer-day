@@ -20,10 +20,12 @@ const Exhibitions = () => {
   const mobileDots = useDotsGenerator("mobile");
   const desktopDots = useDotsGenerator("desktop");
 
+  const isMobile = window.innerWidth < 992 ? true : false;
+
   return (
     <div className="exhibitions">
       <section>
-        <header className="exhibitions__hero text-white px-4 ">
+        <header className="exhibitions__hero text-white p-4">
           <Container ref={hero} id="hero" className="hidden-opacity">
             <Row className="g-5 align-items-center">
               <Col xs={12} md={6}>
@@ -44,7 +46,12 @@ const Exhibitions = () => {
             </Row>
           </Container>
         </header>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260">
+        <svg
+          preserveAspectRatio={isMobile ? "xMidYMid meet" : "none"}
+          className={isMobile ? "" : "svg-wave"}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 260"
+        >
           <path
             fill="#6c63ff"
             fillOpacity="1"

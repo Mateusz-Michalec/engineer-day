@@ -8,19 +8,26 @@ type PropsType = {
   id: string;
 };
 
+const isMobile = window.innerWidth < 992 ? true : false;
+
 const HomeLocation = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
   return (
     <section className="text-white">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        preserveAspectRatio={isMobile ? "xMidYMid meet" : "none"}
+        className={isMobile ? "" : "svg-wave"}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
         <path
           fill="#1255c0"
           fillOpacity="1"
           d="M0,224L48,197.3C96,171,192,117,288,128C384,139,480,213,576,245.3C672,277,768,267,864,261.3C960,256,1056,256,1152,261.3C1248,267,1344,277,1392,282.7L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
-      <div className="home__location">
+      <div className="home__location py-4">
         <Container ref={ref} id={id}>
-          <header className="hidden-opacity  d-flex flex-column align-items-center">
+          <header className="hidden-opacity d-flex flex-column align-items-center">
             <h2 className="fs-1 text-center fw-bold">Miejsce wydarzenia</h2>
             <div className="my-4 my-lg-5 d-flex">
               <i className="fs-1 rounded p-4 bi bi-geo-alt-fill" />
@@ -64,7 +71,12 @@ const HomeLocation = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
           ></iframe>
         </Container>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        preserveAspectRatio={isMobile ? "xMidYMid meet" : "none"}
+        className={isMobile ? "" : "svg-wave"}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
         <path
           fill="#1255c0"
           fillOpacity="1"
