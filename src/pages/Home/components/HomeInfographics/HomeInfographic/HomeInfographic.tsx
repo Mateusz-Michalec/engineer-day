@@ -14,7 +14,12 @@ type PropsType = {
 const HomeInfographic = forwardRef(
   ({ title, image, circleNumber, circleText, desc, id }: PropsType, ref) => {
     return (
-      <Col xs={12} ref={ref} id={id} className="text-white animation-delays">
+      <Col
+        xs={12}
+        ref={ref}
+        id={id}
+        className="text-white animation-delays mt-lg-5"
+      >
         <h3 className="hidden-opacity fs-4  gradient-underscore mb-5 lh-base home__infographic-title">
           {title}
         </h3>

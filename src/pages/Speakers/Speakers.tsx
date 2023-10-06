@@ -12,6 +12,8 @@ const Speakers = () => {
 
   const intersection = useInView([hero]);
 
+  const isMobile = window.innerWidth < 992 ? true : false;
+
   useEffect(() => {
     if (intersection.hero) showElement(hero);
   }, [intersection]);
@@ -19,7 +21,7 @@ const Speakers = () => {
   return (
     <div className="speakers">
       <section>
-        <header className="speakers__hero text-white px-4">
+        <header className="speakers__hero text-white p-4">
           <Container ref={hero} id="hero" className="hidden-opacity">
             <Row className="g-5 align-items-center">
               <Col xs={12} md={6}>
@@ -39,7 +41,12 @@ const Speakers = () => {
             </Row>
           </Container>
         </header>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260">
+        <svg
+          preserveAspectRatio={isMobile ? "xMidYMid meet" : "none"}
+          className={isMobile ? "" : "svg-wave"}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
           <path
             fill="#6c63ff"
             fill-opacity="1"

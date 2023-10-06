@@ -7,10 +7,12 @@ type PropsType = {
   id: string;
 };
 
+const isMobile = window.innerWidth < 992 ? true : false;
+
 const HomeHero = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
   return (
     <section>
-      <div className="home__hero text-center">
+      <div className="home__hero pt-4 text-center">
         <Container
           ref={ref}
           id={id}
@@ -29,7 +31,12 @@ const HomeHero = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
           </header>
         </Container>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 220"
+        preserveAspectRatio={isMobile ? "xMidYMid meet" : "none"}
+        className={isMobile ? "" : "svg-wave"}
+      >
         <path
           fill="#4b7fd9"
           fillOpacity="1"

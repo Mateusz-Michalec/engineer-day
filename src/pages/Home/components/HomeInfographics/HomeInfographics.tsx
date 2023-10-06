@@ -9,25 +9,31 @@ type PropsType = {
   refsArray: React.RefObject<HTMLDivElement>[];
 };
 
+const isMobile = window.innerWidth < 992 ? true : false;
+
 const HomeInfographics = ({ ids, refsArray }: PropsType) => {
   return (
     <section>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        preserveAspectRatio={isMobile ? "xMidYMid meet" : "none"}
+        className={isMobile ? "" : "svg-wave"}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
         <path
           fill="#004cbb"
           fillOpacity="1"
           d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
-      <div className="home__infographics">
+      <div className="home__infographics py-4">
         <Container>
           <header
             id={ids[3]}
             ref={refsArray[3]}
-            className="mb-5 text-white home__infographic-title text-center hidden-opacity"
+            className="mb-5 mb-lg-0 text-white home__infographic-title text-center text-lg-start d-flex hidden-opacity"
           >
-            <h2 className="fs-1 fw-bold">Program wydarzenia</h2>
-            <p>9.00 - 15.00</p>
+            <h2 className="fs-1 fw-bold">Program wydarzenia (9.00 - 15.00)</h2>
           </header>
           <Row className="gap-5">
             <HomeInfographic
@@ -69,7 +75,8 @@ const HomeInfographics = ({ ids, refsArray }: PropsType) => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 260"
-        className="home__wave"
+        preserveAspectRatio={isMobile ? "xMidYMid meet" : "none"}
+        className={isMobile ? "" : "svg-wave"}
       >
         <path
           fill="#004cbb"
