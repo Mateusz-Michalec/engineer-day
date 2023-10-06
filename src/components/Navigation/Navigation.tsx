@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <nav className="navigation d-flex">
-      <div className="navigation__btns fs-6 d-flex w-100 p-lg-4 justify-content-evenly">
+      <div className="navigation__btns fs-6 d-flex w-100 justify-content-evenly">
         <button className="text-white navigation__btn">
           <Link to="/" className="d-flex flex-column align-items-center">
             <i className="bi fs-4 bi-house-fill"></i>

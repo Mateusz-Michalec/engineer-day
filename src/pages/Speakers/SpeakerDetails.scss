@@ -3,3 +3,9 @@
     max-height: 300px;
   }
 }
+
+@media (min-width: 992px) {
+  .speaker-details {
+    padding-top: 5rem;
+  }
+}

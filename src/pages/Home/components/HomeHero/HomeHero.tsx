@@ -12,7 +12,7 @@ const isMobile = window.innerWidth < 992 ? true : false;
 const HomeHero = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
   return (
     <section>
-      <div className="home__hero pt-4 text-center">
+      <div className="home__hero px-4 pb-4 text-center">
         <Container
           ref={ref}
           id={id}

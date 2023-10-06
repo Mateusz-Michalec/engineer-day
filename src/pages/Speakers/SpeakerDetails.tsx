@@ -18,7 +18,7 @@ const SpeakerDetails = () => {
   }, [intersection]);
 
   return (
-    <article className="speaker-details px-4">
+    <article className="speaker-details px-4 pb-4">
       <Container>
         <Link to="/speakers">
           <Button variant="outline-dark fs-5 my-5">

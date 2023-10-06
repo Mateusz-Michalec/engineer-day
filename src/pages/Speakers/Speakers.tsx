@@ -21,7 +21,7 @@ const Speakers = () => {
   return (
     <div className="speakers">
       <section>
-        <header className="speakers__hero text-white p-4">
+        <header className="speakers__hero text-white px-4 pb-4">
           <Container ref={hero} id="hero" className="hidden-opacity">
             <Row className="g-5 align-items-center">
               <Col xs={12} md={6}>
