@@ -20,9 +20,10 @@ const HomeInfographic = forwardRef(
         id={id}
         className="text-white animation-delays mt-lg-5"
       >
-        <h3 className="hidden-opacity fs-4  gradient-underscore mb-5 lh-base home__infographic-title">
+        <h3 className="hidden-opacity fs-4 gradient-underscore mb-5 lh-base home__infographic-title">
           {title}
         </h3>
+
         <Stack
           direction="horizontal"
           className="justify-content-center hidden-x-left"

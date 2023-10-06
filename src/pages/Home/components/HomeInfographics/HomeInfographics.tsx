@@ -39,34 +39,40 @@ const HomeInfographics = ({ ids, refsArray }: PropsType) => {
             <HomeInfographic
               ref={refsArray[0]}
               id={ids[0]}
-              title={"Wystąpienia prelegentów na scenie (30 minut)"}
+              title={
+                "Sesja plenarna: Jeśli czegoś nie wolno, a bardzo się chce – to można? (40-50 minut)"
+              }
               image={images.home_speakers}
-              circleNumber={"8"}
+              circleNumber={"8+"}
               circleText={"prelegentów"}
               desc={
-                "Czołowi przedstawiciele branży inżynierskiej podzielą się swoimi doświadczeniami, wiedzą i przemyśleniami na temat najnowszych osiągnięć w dziedzinie technologii, innowacji i projektowania."
+                "Przedstawiciele branży inżynierskiej podzielą się swoimi doświadczeniami, wiedzą i przemyśleniami w dziedzinie technologii, innowacji i projektowania."
               }
             />
             <HomeInfographic
               ref={refsArray[1]}
               id={ids[1]}
-              title={"Strefa wystawców (60 minut)"}
+              title={
+                "Śladami radomskich inżynierów, czyli zwiedzanie strefy wystawców (60 minut)"
+              }
               image={images.home_ehxibitors}
-              circleNumber={"20"}
+              circleNumber={"20+"}
               circleText={"wystawców"}
               desc={
-                "Przedsiębiorstwa i firmy technologiczne zaprezentują swoje produkty i rozwiązania, dając możliwość zapoznania się z najnowszymi trendami w świecie inżynierii."
+                "Współorganizatorzy oraz firmy technologiczne zaprezentują swoje produkty i rozwiązania, dając możliwość zapoznania się z najnowszymi trendami w świecie inżynierii."
               }
             />
             <HomeInfographic
               ref={refsArray[2]}
               id={ids[2]}
-              title={"Warsztaty dla doradców zawodowych "}
+              title={
+                "Warsztaty dla doradców zawodowych z placówek oświatowych oraz opiekunów praktyk zawodowych w przedsiębiorstwach (12.00-14.00)"
+              }
               image={images.home_learning}
-              circleNumber={"10"}
-              circleText={"wykładowców"}
+              circleNumber={"3"}
+              circleText={"firmy technologiczne"}
               desc={
-                "Interaktywne warsztaty dedykowane doradcom zawodowym. Podczas naszych zajęć uczestnicy zgłębią najnowsze techniki i narzędzia wykorzystywane w doradztwie, będą miały okazję wymienić się doświadczeniami i spostrzeżeniami z branży oraz rozwijać swoje kompetencje interpersonalne. "
+                "Podczas warsztatów uczestnicy zgłębią techniki i narzędzia wykorzystywane w doradztwie, będą miały okazję wymienić się doświadczeniami i spostrzeżeniami z branży oraz rozwijać swoje kompetencje interpersonalne. "
               }
             />
           </Row>

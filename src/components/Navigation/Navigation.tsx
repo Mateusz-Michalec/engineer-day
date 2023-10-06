@@ -12,6 +12,15 @@ const Navigation = () => {
           </Link>
         </button>
         <button className="text-white navigation__btn">
+          <Link
+            to="/program-wydarzenia"
+            className="d-flex flex-column align-items-center"
+          >
+            <i className="bi d-flex fs-4 bi-info-circle-fill"></i>
+            <span>Program</span>
+          </Link>
+        </button>
+        <button className="text-white navigation__btn">
           <Link to="map" className="d-flex flex-column align-items-center">
             <i className="bi d-flex fs-4 bi-map-fill"></i>
             <span>Mapa</span>

@@ -12,7 +12,7 @@ const isMobile = window.innerWidth < 992 ? true : false;
 const HomeHero = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
   return (
     <section>
-      <div className="home__hero  text-center">
+      <div className="home__hero text-center">
         <Container
           ref={ref}
           id={id}
@@ -27,7 +27,7 @@ const HomeHero = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
             <h1 className="home__hero-title fw-bold display-4 lh-sm text-uppercase">
               Radomski Dzień Inżyniera 2023
             </h1>
-            <h2 className="mb-0 fs-3">17 października Hala RCS Radom</h2>
+            <h2 className="mb-0 fs-3">19 października Hala RCS Radom</h2>
           </header>
         </Container>
       </div>

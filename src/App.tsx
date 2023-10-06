@@ -6,6 +6,7 @@ import ExhibitionDetails from "./pages/Exhibitions/ExhibitionDetails";
 import Speakers from "./pages/Speakers/Speakers";
 import "./App.scss";
 import SpeakerDetails from "./pages/Speakers/SpeakerDetails";
+import EventProgram from "./pages/EventProgram/EventProgram";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route index element={<Speakers />} />
           <Route path=":id" element={<SpeakerDetails />} />
         </Route>
+        <Route path="program-wydarzenia" element={<EventProgram />} />
         <Route path="*" element={<Layout />} />
       </Route>
     </Routes>

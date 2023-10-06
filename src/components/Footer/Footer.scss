@@ -1,82 +1,82 @@
-@import '../../assets/variables.scss';
+@import "../../assets/variables.scss";
 .footer {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	margin-top: 6rem;
-	padding-top: 2rem;
-	padding-bottom: 4rem;
-	background-color: $dark-shade;
-	color: $neutral-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background-color: $dark-shade;
+  color: $neutral-color;
 
-	&__top {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		&-img {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 150px;
-			height: 150px;
-			background-color: white;
-			border-radius: 0.3rem;
-			cursor: pointer;
-			img {
-				width: 120px;
-			}
-		}
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 150px;
+      background-color: white;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      img {
+        width: 120px;
+      }
+    }
 
-		&-text {
-			margin-top: 0.6rem;
-			text-align: center;
+    &-text {
+      margin-top: 0.6rem;
+      text-align: center;
 
-			&-link {
-				transition: 0.3s color;
-				cursor: pointer;
-				&:hover {
-					color: $accent-color-1;
-				}
-			}
-		}
-	}
+      &-link {
+        transition: 0.3s color;
+        cursor: pointer;
+        &:hover {
+          color: $accent-color-1;
+        }
+      }
+    }
+  }
 
-	&__bottom {
-		height: 3rem;
-		padding-top: 1rem;
-		border-top: 1px solid $accent-color-2;
-		font-size: 0.8rem;
-		line-height: 0.3rem;
-		text-align: center;
-		&-authors {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			gap: 1rem;
+  &__bottom {
+    height: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid $accent-color-2;
+    font-size: 0.8rem;
+    line-height: 0.3rem;
+    text-align: center;
+    &-authors {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
 
-			&-member {
-				transition: 0.3s color;
-				cursor: pointer;
-				&:hover {
-					color: $accent-color-1;
-				}
-			}
-		}
-	}
+      &-member {
+        transition: 0.3s color;
+        cursor: pointer;
+        &:hover {
+          color: $accent-color-1;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
-	.footer {
-		&__top {
-			flex-direction: row;
-			justify-content: space-evenly;
-			margin-bottom: 0.8rem;
-			&-text {
-				width: 35rem;
-			}
-		}
-	}
+  .footer {
+    &__top {
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-bottom: 0.8rem;
+      &-text {
+        width: 35rem;
+      }
+    }
+  }
 }

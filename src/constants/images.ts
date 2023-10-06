@@ -12,6 +12,7 @@ import exhibitions_hero from "../assets/images/exhibitions_hero.svg";
 import exhibitions_map from "../assets/images/exhibitions_map.png";
 import exhibitions_logo_uth from "../assets/images/ur.jpg";
 import exhibitions_logo_radom from "../assets/images/logo_radom.jpg";
+import eventProgram from "../assets/images/program.png";
 
 // Partners logos
 import iph from "../assets/images/partners_logos/iph.png";
@@ -89,4 +90,5 @@ export default {
   exhibitions_logo_uth,
   exhibitions_logo_radom,
   partners,
+  eventProgram,
 };
