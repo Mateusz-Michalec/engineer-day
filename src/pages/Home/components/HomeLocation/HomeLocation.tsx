@@ -53,7 +53,7 @@ const HomeLocation = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
           </div>
           <p className="my-4 my-lg-5  home__location-desc hidden-opacity">
             <strong>
-              <Link to="https://www.rcs.radom.pl/">
+              <Link target="_blank" to="https://www.rcs.radom.pl/">
                 Radomskie Centrum Sportu
               </Link>
             </strong>{" "}

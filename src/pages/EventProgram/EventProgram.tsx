@@ -23,7 +23,7 @@ const EventProgram = () => {
           </h1>
         </header>
         <img
-          className="img-fluid mx-auto d-block hidden-x-right"
+          className="mx-auto d-block hidden-x-right img-fluid"
           src={images.eventProgram}
           alt="Szczegółowy program wydarzenia"
         />

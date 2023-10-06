@@ -13,7 +13,7 @@ const HomePartners = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
       <div
         ref={ref}
         id={id}
-        className="home__partners animations-delays d-flex flex-wrap gap-4 justify-content-center align-items-center"
+        className="home__partners animation-delays d-flex flex-wrap gap-4 justify-content-center align-items-center"
       >
         <h2 className="hidden-opacity w-100 fs-1 mb-4 fw-bold text-center">
           Współorganizatorzy
@@ -21,6 +21,7 @@ const HomePartners = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
 
         {images.partners.map((partner) => (
           <Link
+            target="_blank"
             key={partner.name}
             className="hidden-opacity home__partner"
             to={partner.link}
