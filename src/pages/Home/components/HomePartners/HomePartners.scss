@@ -2,8 +2,6 @@
 
 .home {
   &__partners {
-    overflow-x: auto;
-
     :nth-child(2) {
       animation-delay: 200ms;
     }
@@ -23,16 +21,30 @@
     :nth-child(6) {
       animation-delay: 1000ms;
     }
+
+    :nth-child(7) {
+      animation-delay: 1200ms;
+    }
+
+    :nth-child(8) {
+      animation-delay: 1400ms;
+    }
+
+    :nth-child(9) {
+      animation-delay: 1600ms;
+    }
   }
 
   &__partner {
-    a {
-      color: $text-color;
+    color: $text-color;
+
+    &-logo {
+      display: block;
+      max-height: 80px;
     }
 
-    &-img {
-      max-height: 120px;
-      margin-bottom: 10px;
+    &:hover {
+      color: $accent-color-1;
     }
   }
 }
