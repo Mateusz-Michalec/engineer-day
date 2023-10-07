@@ -8,10 +8,10 @@ const Layout = () => {
     <>
       <ScrollToTop />
       <Navigation />
-      <main>
+      <main className="app">
         <Outlet />
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 };

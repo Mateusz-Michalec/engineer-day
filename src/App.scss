@@ -22,12 +22,25 @@
   font-size: 1.2rem;
   min-height: 100vh;
   letter-spacing: 0.5px;
+  overflow-x: hidden;
+
+  .app:not(:has(.home)) {
+    margin-top: $navigation-height;
+  }
 }
 
 a {
-  text-decoration: none;
   color: white;
-  transition: all 0.15s ease-in-out;
+
+  * {
+    transition: $transition-fast;
+  }
+}
+
+a,
+.bi {
+  text-decoration: none;
+  transition: $transition-fast;
 
   &:hover {
     color: $accent-color-1;
@@ -37,7 +50,7 @@ a {
 button {
   border: none;
   background: none;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.15s $transition-fast;
 }
 
 svg {
@@ -154,5 +167,9 @@ svg {
 @media screen and (min-width: 992px) {
   #root {
     padding-bottom: 0rem;
+
+    .app:not(:has(.home)) {
+      margin-top: $navigation-height * 2;
+    }
   }
 }

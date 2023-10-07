@@ -32,6 +32,7 @@ import marcin_kostrzewa from "../assets/images/speakers/marcin_kostrzewa.webp";
 import tomasz_perzynski from "../assets/images/speakers/tomasz_perzynski.webp";
 import krzysztof_smiechowski from "../assets/images/speakers/krzysztof_smiechowski.webp";
 import studenci from "../assets/images/speakers/studenci.jpg";
+import motyl_przemyslaw from "../assets/images/speakers/przemyslaw_motyl.jpg";
 
 type Partners = {
   img: string;
@@ -83,10 +84,10 @@ const partners: Partners[] = [
   },
 ];
 
-type Speaker = {
+export type Speaker = {
   name: string;
   desc: string;
-  photo?: string | string[];
+  photo: string | string[];
   lectures: string[];
   link: string;
 };
@@ -108,6 +109,7 @@ const speakers: Speaker[] = [
     desc: "Sieć Badawcza Łukasiewicz - Instytut Technologii Eksploatacji od ponad trzydziestu lat specjalizuje się w kreowaniu innowacyjności w obszarze budowy i eksploatacji maszyn, bezpieczeństwa technicznego i ochrony środowiska, a także opracowywaniu modelowych rozwiązań dotyczących programów ustawicznego kształcenia i doskonalenia kadr dla innowacyjnej gospodarki oraz transferu zaawansowanych technologii do zastosowań przemysłowych",
     lectures: ["Wprowadzenie - co ja tutaj robię?", "Wiedzomania"],
     link: "https://www.itee.lukasiewicz.gov.pl/",
+    photo: ite,
   },
   {
     name: "Opowiadacze: Anna Dzik, Dariusz Wróbel (grupa Baśnie z Sześciu Stron Świata)",
@@ -128,13 +130,14 @@ const speakers: Speaker[] = [
     photo: marcin_kostrzewa,
   },
   {
-    name: "DR INŻ. PRZEMYSŁAW MOTYL",
+    name: "dr inż. Przemysław Motyl",
     desc: "Prodziekan Wydziału Mechanicznego UR",
     lectures: ["Inżynier to jest ktoś!"],
     link: "https://wm.uniwersytetradom.pl/",
+    photo: motyl_przemyslaw,
   },
   {
-    name: "dr hab. inż. TOMASZ PERZYŃSKI, prof. URad",
+    name: "dr hab. inż. Tomasz Perzyński, prof. URad",
     desc: "Dziekan Wydziału Transportu, Elektrotechniki i Informatyki",
     lectures: ["Inżynier to jest ktoś!"],
     link: "https://wteii.uniwersytetradom.pl/wladze-wydzialu/",
@@ -149,14 +152,14 @@ const speakers: Speaker[] = [
   },
   {
     name: "Studenci Politechniki Gdańskiej",
-    desc: "Studenci Politechniki Gdańskiej zaprezentują swój bolid",
-    lectures: ["Jak zostać kimś, kto cieszy się tym oc robi?"],
+    desc: "Studenci Politechniki Gdańskiej zaprezentują swóje osiągnięcia w dziedzinie inżynierii.",
+    lectures: ["Jak zostać kimś, kto cieszy się tym co robi?"],
     link: "https://forumakademickie.pl/sport-akademicki/studenci-politechniki-gdanskiej-zaprezentowali-swoj-nowy-bolid/",
     photo: studenci,
   },
   {
     name: "Radomska Rada Federacji Stowarzyszeń Naukowo – Technicznych",
-    desc: "Sesja 1 - nagrody dla uczniów szkół podstawowych\nSesja 2 - nagrody dla uczniów średnich",
+    desc: "Odbędą się dwie sesje, podczas których zostaną przyznane nagrody dla uczniów szkól podstawowych oraz średnich.",
     lectures: ["Młody Innowator"],
     link: "https://radom.enot.pl/inne/mlody-innowator-2",
     photo: not,

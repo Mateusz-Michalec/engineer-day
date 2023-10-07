@@ -2,8 +2,7 @@
 
 .exhibitions {
   &__hero {
-    background-color: $accent-color-2;
-    padding-top: 2rem;
+    background-color: $light-shade;
 
     &-img {
       max-height: 230px;
@@ -85,11 +84,5 @@
         }
       }
     }
-  }
-}
-
-@media (min-width: 992px) {
-  .exhibitions__hero {
-    padding-top: 8rem;
   }
 }

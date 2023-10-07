@@ -19,3 +19,8 @@ $box-shadow-1: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
 
 // line-height
 $lh-desc: 2.2rem;
+
+$navigation-height: 5rem;
+$app-padding: $navigation-height * 2;
+
+$transition-fast: all 0.15s ease-in-out;

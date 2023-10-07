@@ -33,7 +33,9 @@ const HomeInfographics = ({ ids, refsArray }: PropsType) => {
             ref={refsArray[3]}
             className="mb-5 mb-lg-0 text-white home__infographic-title text-center text-lg-start d-flex hidden-opacity"
           >
-            <h2 className="fs-1 fw-bold">Program wydarzenia (9.00 - 15.00)</h2>
+            <h2 className="fs-1 fw-bold text-center text-lg-start w-100">
+              Program wydarzenia
+            </h2>
           </header>
           <Row className="gap-5">
             <HomeInfographic

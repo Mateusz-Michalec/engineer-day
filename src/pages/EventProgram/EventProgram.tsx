@@ -1,34 +1,32 @@
 import React, { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
-import "./EventProgram.scss";
 import { images } from "../../constants";
 import useInView from "../../hooks/useInView";
-import { showGroupElements } from "../../utils/animate";
+import { showElement } from "../../utils/animate";
+import ActionBar from "../../components/ActionBar/ActionBar";
 
 const EventProgram = () => {
-  const eventProgram = useRef<HTMLDivElement>(null);
+  const eventProgram = useRef<HTMLImageElement>(null);
 
   const intersection = useInView([eventProgram]);
 
   useEffect(() => {
-    if (intersection.eventProgram) showGroupElements(eventProgram);
+    if (intersection.eventProgram) showElement(eventProgram);
   }, [intersection]);
 
   return (
-    <Container>
-      <section id="eventProgram" ref={eventProgram} className="event-program">
-        <header className="hidden-x-left">
-          <h1 className="text-center fs-1 mb-5 fw-bold">
-            Szczegółowy program wydarzenia
-          </h1>
-        </header>
+    <section className="event-program pt-5">
+      <ActionBar title="Szczegółowy program wydarzenia" />
+      <Container>
         <img
-          className="mx-auto d-block hidden-x-right img-fluid"
+          id="eventProgram"
+          ref={eventProgram}
+          className="mx-auto d-block img-fluid hidden-x-right"
           src={images.eventProgram}
           alt="Szczegółowy program wydarzenia"
         />
-      </section>
-    </Container>
+      </Container>
+    </section>
   );
 };
 
