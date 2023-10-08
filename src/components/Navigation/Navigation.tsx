@@ -27,7 +27,10 @@ const Navigation = () => {
           </Link>
         </button>
         <button className="text-white navigation__btn">
-          <Link to="speakers" className="d-flex flex-column align-items-center">
+          <Link
+            to="prelegaci"
+            className="d-flex flex-column align-items-center"
+          >
             <i className="bi d-flex fs-4 bi-people-fill"></i>
             <span>Mówcy</span>
           </Link>

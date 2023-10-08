@@ -1,28 +1,30 @@
-import hero_engineer from "../assets/images/hero_engineer.svg";
-import home_speakers from "../assets/images/home_speakers.svg";
-import home_ehxibitors from "../assets/images/home_exhibitors.svg";
-import home_learning from "../assets/images/home_learning.svg";
+// Home
+import hero_engineer from "../assets/images/home/hero_engineer.svg";
+import home_speakers from "../assets/images/home/home_speakers.svg";
+import home_ehxibitors from "../assets/images/home/home_exhibitors.svg";
+import home_learning from "../assets/images/home/home_learning.svg";
 import hala_rcs from "../assets/images/hala_rcs-min.jpg";
-import home_woman_sitting from "../assets/images/home_woman_sitting.svg";
-import home_map from "../assets/images/home_map.svg";
-import female_avatar from "../assets/images/female_avatar.svg";
-import male_avatar from "../assets/images/male_avatar.svg";
-import speakers_hero from "../assets/images/speakers_hero.svg";
+import home_woman_sitting from "../assets/images/home/home_woman_sitting.svg";
+import home_map from "../assets/images/home/home_map.svg";
+
+import speakers_hero from "../assets/images/speakers/speakers_hero.svg";
+
 import exhibitions_hero from "../assets/images/exhibitions_hero.svg";
 import exhibitions_map from "../assets/images/exhibitions_map.png";
 import exhibitions_logo_uth from "../assets/images/ur.jpg";
 import exhibitions_logo_radom from "../assets/images/logo_radom.jpg";
+
 import eventProgram from "../assets/images/program.png";
 
 // Partners logos
-import iph from "../assets/images/partners_logos/iph.png";
-import ite from "../assets/images/partners_logos/ite.png";
-import not from "../assets/images/partners_logos/not.jpg";
-import ppp from "../assets/images/partners_logos/ppp.jpg";
-import radom from "../assets/images/partners_logos/radom.jpg";
-import rkm from "../assets/images/partners_logos/rkm.png";
-import ur from "../assets/images/partners_logos/ur.png";
-import zst from "../assets/images/partners_logos/zst.jpg";
+import iph from "../assets/images/partners/iph.png";
+import ite from "../assets/images/partners/ite.png";
+import not from "../assets/images/partners/not.jpg";
+import ppp from "../assets/images/partners/ppp.jpg";
+import radom from "../assets/images/partners/radom.jpg";
+import rkm from "../assets/images/partners/rkm.png";
+import ur from "../assets/images/partners/ur.png";
+import zst from "../assets/images/partners/zst.jpg";
 
 // Speakers photos
 import tomasz_magnowski from "../assets/images/speakers/tomasz_magnowski.jpg";
@@ -85,6 +87,7 @@ const partners: Partners[] = [
 ];
 
 export type Speaker = {
+  id: string;
   name: string;
   desc: string;
   photo: string | string[];
@@ -94,6 +97,7 @@ export type Speaker = {
 
 const speakers: Speaker[] = [
   {
+    id: "tm-speaker",
     name: "Tomasz Magnowski",
     desc: "Doradca zawodowy, nauczyciel zawodu, trener biznesu, Microsoft Innovative Educator Expert. Na co dzień nauczyciel i doradca zawodowy oraz właściciel firmy szkoleniowej TiM. Organizator Ogólnopolskich Targów Szkół Wyższych w Radomiu i Wystawy Interaktywnej MÓZG. Od 2019 r. przewodniczący Zarządu Głównego Stowarzyszenia Doradców Szkolnych i Zawodowych RP.",
     photo: tomasz_magnowski,
@@ -105,6 +109,7 @@ const speakers: Speaker[] = [
     link: "https://doradztwoszkolne.pl/autor/tomasz-magnowski--14765",
   },
   {
+    id: "mz-speaker",
     name: "dr Mirosław Żurek",
     desc: "Sieć Badawcza Łukasiewicz - Instytut Technologii Eksploatacji od ponad trzydziestu lat specjalizuje się w kreowaniu innowacyjności w obszarze budowy i eksploatacji maszyn, bezpieczeństwa technicznego i ochrony środowiska, a także opracowywaniu modelowych rozwiązań dotyczących programów ustawicznego kształcenia i doskonalenia kadr dla innowacyjnej gospodarki oraz transferu zaawansowanych technologii do zastosowań przemysłowych",
     lectures: ["Wprowadzenie - co ja tutaj robię?", "Wiedzomania"],
@@ -112,6 +117,7 @@ const speakers: Speaker[] = [
     photo: ite,
   },
   {
+    id: "opowiadacze-speaker",
     name: "Opowiadacze: Anna Dzik, Dariusz Wróbel (grupa Baśnie z Sześciu Stron Świata)",
     desc: "Radomska Grupa Opowiadaczy to ludzie, których pasjonuje opowiadanie i storytelling. Opowiadamy historie bardziej i mniej prawdziwe, ale zawsze z pasją.",
     lectures: [
@@ -123,6 +129,7 @@ const speakers: Speaker[] = [
   },
 
   {
+    id: "mk-speaker",
     name: "dr hab. inż. Marcin Kostrzewa, prof. UTH Rad",
     desc: "Dziekan Wydziału Inżynierii Chemicznej i Towaroznawstwa",
     lectures: ["Inżynier to jest ktoś!"],
@@ -130,6 +137,7 @@ const speakers: Speaker[] = [
     photo: marcin_kostrzewa,
   },
   {
+    id: "pm-speaker",
     name: "dr inż. Przemysław Motyl",
     desc: "Prodziekan Wydziału Mechanicznego UR",
     lectures: ["Inżynier to jest ktoś!"],
@@ -137,6 +145,7 @@ const speakers: Speaker[] = [
     photo: motyl_przemyslaw,
   },
   {
+    id: "tp-speaker",
     name: "dr hab. inż. Tomasz Perzyński, prof. URad",
     desc: "Dziekan Wydziału Transportu, Elektrotechniki i Informatyki",
     lectures: ["Inżynier to jest ktoś!"],
@@ -144,6 +153,7 @@ const speakers: Speaker[] = [
     photo: tomasz_perzynski,
   },
   {
+    id: "ks-speaker",
     name: "dr hab. inż. Krzysztof Śmiechowski, prof. UTH Rad",
     desc: "Prezes Zarządu Radomskiej Rady FSNT-NOT ",
     lectures: ["Inżynier to jest ktoś!"],
@@ -151,6 +161,7 @@ const speakers: Speaker[] = [
     photo: krzysztof_smiechowski,
   },
   {
+    id: "studenci-speaker",
     name: "Studenci Politechniki Gdańskiej",
     desc: "Studenci Politechniki Gdańskiej zaprezentują swóje osiągnięcia w dziedzinie inżynierii.",
     lectures: ["Jak zostać kimś, kto cieszy się tym co robi?"],
@@ -158,6 +169,7 @@ const speakers: Speaker[] = [
     photo: studenci,
   },
   {
+    id: "enot-speaker",
     name: "Radomska Rada Federacji Stowarzyszeń Naukowo – Technicznych",
     desc: "Odbędą się dwie sesje, podczas których zostaną przyznane nagrody dla uczniów szkól podstawowych oraz średnich.",
     lectures: ["Młody Innowator"],
@@ -174,8 +186,6 @@ export default {
   home_woman_sitting,
   home_map,
   home_learning,
-  female_avatar,
-  male_avatar,
   speakers_hero,
   exhibitions_hero,
   exhibitions_map,

@@ -1,0 +1,22 @@
+@import "../../../assets/variables.scss";
+
+.speakers__card {
+  background-color: $light-shade;
+  &-photo {
+    height: 12rem;
+    width: 12rem;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: 45%;
+    border-radius: 50%;
+
+    &--contain {
+      object-fit: contain;
+      height: auto;
+      width: auto;
+      border-radius: 0;
+    }
+  }
+}

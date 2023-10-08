@@ -39,7 +39,7 @@ const HomeLocation = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
             </div>
           </header>
 
-          <div className="position-relative hidden-y-top">
+          <div className="position-relative hidden-x-left">
             <img
               className="img-fluid rounded"
               src={images.hala_rcs}

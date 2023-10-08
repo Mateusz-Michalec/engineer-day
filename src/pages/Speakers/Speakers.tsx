@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Button, Col, Container, Row, Stack } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import "./Speakers.scss";
 import { images } from "../../constants";
-import { Link } from "react-router-dom";
 import useInView from "../../hooks/useInView";
 import { showElement } from "../../utils/animate";
 import ActionBar from "../../components/ActionBar/ActionBar";
-import SpeakerCard from "./SpeakerCard";
+import SpeakerCard from "./SpeakersCard/SpeakerCard";
 
 const Speakers = () => {
   // refs
@@ -14,15 +13,19 @@ const Speakers = () => {
 
   const createRefs = () => {
     const arrayOfRefs: React.RefObject<HTMLDivElement>[] = [];
-    const speakersRefs = images.speakers.map((speaker) => {
+
+    for (let i = 0; i < images.speakers.length; i++) {
       const ref = useRef(null);
       arrayOfRefs.push(ref);
-    });
+    }
+
     return [hero, ...arrayOfRefs];
   };
 
-  const [refsArray, setRefsArray] = useState<React.RefObject<HTMLDivElement>[]>(
-    createRefs()
+  const [refsArray] = useState<React.RefObject<HTMLDivElement>[]>(createRefs());
+
+  const [speakersIds] = useState<string[]>(
+    images.speakers.map((speaker) => speaker.id)
   );
 
   const intersection = useInView(refsArray);
@@ -31,6 +34,8 @@ const Speakers = () => {
 
   useEffect(() => {
     if (intersection.hero) showElement(hero);
+    for (let i = 1; i < refsArray.length; i++)
+      if (intersection[speakersIds[i - 1]]) showElement(refsArray[i]);
   }, [intersection]);
 
   return (
@@ -75,6 +80,7 @@ const Speakers = () => {
           <Row className="gy-5 justify-content-center">
             {images.speakers.map((speaker, i) => (
               <SpeakerCard
+                id={speaker.id}
                 ref={refsArray[i + 1]}
                 name={speaker.name}
                 desc={speaker.desc}

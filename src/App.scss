@@ -14,6 +14,16 @@
 
 // GENERAL
 
+::-webkit-scrollbar {
+  width: 10px;
+  background: $disabled-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $accent-color-1;
+  border-radius: 20px;
+}
+
 #root {
   font-family: "Poppins", sans-serif;
   color: $text-color;
@@ -93,26 +103,6 @@ svg {
 
 .btn-outline-light:hover {
   color: $text-color;
-}
-
-.btn-accent {
-  border: none;
-
-  &:hover {
-    box-shadow: $box-shadow;
-  }
-
-  a:hover {
-    color: inherit;
-  }
-
-  &--1 {
-    background-color: $accent-color-1;
-
-    &:hover {
-      background-color: $accent-color-1;
-    }
-  }
 }
 
 // ANIMATIONS (for intersection observer)

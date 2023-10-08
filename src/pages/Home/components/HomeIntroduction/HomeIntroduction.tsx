@@ -29,9 +29,6 @@ const HomeIntroduction = forwardRef<HTMLDivElement, PropsType>(
             wspaniałą rozrywkę, edukację oraz możliwość nawiązania cennych
             kontaktów zawodowych.
           </p>
-          <Button className="btn-accent btn-accent--1 mx-auto d-block">
-            <Link to="program-wydarzenia">Zobacz program wydarzenia</Link>
-          </Button>
           <div className="text-end">
             <i className="bi bi-quote d-inline-block fs-1 home__quote home__quote--rotated" />
           </div>{" "}

@@ -10,23 +10,18 @@ const useInView = (
   const [elements, setElements] = useState<Element>({});
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const element = entry.target.id;
-          if (entry.isIntersecting)
-            setElements((prev) => {
-              return {
-                ...prev,
-                [element]: true,
-              };
-            });
-        });
-      },
-      {
-        rootMargin: "-50px",
-      }
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const element = entry.target.id;
+        if (entry.isIntersecting)
+          setElements((prev) => {
+            return {
+              ...prev,
+              [element]: true,
+            };
+          });
+      });
+    });
 
     refs.forEach((ref) => {
       if (ref.current) observer.observe(ref.current);

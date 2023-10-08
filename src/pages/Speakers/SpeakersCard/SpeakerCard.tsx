@@ -1,11 +1,12 @@
 import React, { forwardRef, useRef, useState } from "react";
 import { Col, Stack, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { images } from "../../constants";
-import { type Speaker } from "../../constants/images";
+import { images } from "../../../constants";
+import { type Speaker } from "../../../constants/images";
+import "./SpeakersCard.scss";
 
 const SpeakerCard = forwardRef<HTMLDivElement, Speaker>(
-  ({ desc, link, lectures, name, photo }, ref) => {
+  ({ id, desc, link, lectures, name, photo }, ref) => {
     const descRef = useRef<HTMLParagraphElement>(null);
 
     const [isShortDescription, setIsShortDescription] = useState<boolean>(
@@ -13,19 +14,19 @@ const SpeakerCard = forwardRef<HTMLDivElement, Speaker>(
     );
 
     return (
-      <Col xs={12} lg={9} ref={ref} className="p-4 speakers__card rounded">
+      <Col
+        xs={12}
+        lg={9}
+        ref={ref}
+        id={id}
+        className="p-4 speakers__card rounded hidden-x-right"
+      >
         {typeof photo === "string" ? (
           <img
             className={`speakers__card-photo ${
               photo.endsWith(".png") ? "speakers__card-photo--contain" : ""
             }`}
             src={photo}
-            alt={name}
-          />
-        ) : typeof photo === "undefined" ? (
-          <img
-            className="speakers__card-photo"
-            src={images.male_avatar}
             alt={name}
           />
         ) : (
@@ -48,6 +49,7 @@ const SpeakerCard = forwardRef<HTMLDivElement, Speaker>(
           )}
           {desc.length > 160 ? (
             <button
+              title="Rozwiń opis"
               className="text-white mx-auto"
               style={{ marginTop: "-1rem" }}
               onClick={() => {
@@ -72,9 +74,10 @@ const SpeakerCard = forwardRef<HTMLDivElement, Speaker>(
               ))}
             </ul>
           </div>
-          <Link to={link} className="mx-auto">
-            <Button variant="outline-light">Dowiedz się więcej</Button>
-          </Link>
+
+          <Button variant="outline-light mx-auto">
+            <Link to={link}>Dowiedz się więcej</Link>
+          </Button>
         </article>
       </Col>
     );
