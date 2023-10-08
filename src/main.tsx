@@ -3,7 +3,7 @@ import App from "./App.tsx";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <BrowserRouter basename="/engineer-day">
+  <BrowserRouter basename="/radomski-dzien-inzyniera">
     <App />
   </BrowserRouter>
 );
