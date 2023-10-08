@@ -21,7 +21,10 @@ const Navigation = () => {
           </Link>
         </button>
         <button className="text-white navigation__btn">
-          <Link to="map" className="d-flex flex-column align-items-center">
+          <Link
+            to="mapa-stoisk"
+            className="d-flex flex-column align-items-center"
+          >
             <i className="bi d-flex fs-4 bi-map-fill"></i>
             <span>Mapa</span>
           </Link>
