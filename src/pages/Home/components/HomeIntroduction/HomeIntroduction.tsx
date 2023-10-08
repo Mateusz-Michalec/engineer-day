@@ -1,8 +1,6 @@
 import { forwardRef } from "react";
 import { images } from "../../../../constants";
 import "./HomeIntroduction.scss";
-import { Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 type PropsType = {
   id: string;

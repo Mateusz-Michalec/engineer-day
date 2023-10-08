@@ -1,7 +1,6 @@
-import React, { forwardRef, useRef, useState } from "react";
-import { Col, Stack, Button } from "react-bootstrap";
+import { forwardRef, useRef, useState } from "react";
+import { Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { images } from "../../../constants";
 import { type Speaker } from "../../../constants/images";
 import "./SpeakersCard.scss";
 

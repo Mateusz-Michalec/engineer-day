@@ -1,4 +1,3 @@
-import React from "react";
 import "./ActionBar.scss";
 import { Link } from "react-router-dom";
 

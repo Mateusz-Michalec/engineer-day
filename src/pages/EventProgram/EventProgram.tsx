@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
 import { images } from "../../constants";
 import useInView from "../../hooks/useInView";
