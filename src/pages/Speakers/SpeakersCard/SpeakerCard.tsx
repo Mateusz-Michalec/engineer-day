@@ -23,7 +23,7 @@ const SpeakerCard = forwardRef<HTMLDivElement, Speaker>(
         {typeof photo === "string" ? (
           <img
             className={`speakers__card-photo ${
-              photo.endsWith(".png") ? "speakers__card-photo--contain" : ""
+              photo.includes("png") ? "speakers__card-photo--contain" : ""
             }`}
             src={photo}
             alt={name}
