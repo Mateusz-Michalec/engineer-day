@@ -111,7 +111,7 @@ const speakers: Speaker[] = [
   {
     id: "mz-speaker",
     name: "dr Mirosław Żurek",
-    desc: "Sieć Badawcza Łukasiewicz - Instytut Technologii Eksploatacji od ponad trzydziestu lat specjalizuje się w kreowaniu innowacyjności w obszarze budowy i eksploatacji maszyn, bezpieczeństwa technicznego i ochrony środowiska, a także opracowywaniu modelowych rozwiązań dotyczących programów ustawicznego kształcenia i doskonalenia kadr dla innowacyjnej gospodarki oraz transferu zaawansowanych technologii do zastosowań przemysłowych",
+    desc: "Sieć Badawcza Łukasiewicz - Instytut Technologii Eksploatacji od ponad trzydziestu lat specjalizuje się w kreowaniu innowacyjności w obszarze budowy i eksploatacji maszyn, bezpieczeństwa technicznego i ochrony środowiska, a także opracowywaniu modelowych rozwiązań dotyczących programów ustawicznego kształcenia i doskonalenia kadr dla innowacyjnej gospodarki oraz transferu zaawansowanych technologii do zastosowań przemysłowych.",
     lectures: ["Wprowadzenie - co ja tutaj robię?", "Wiedzomania"],
     link: "https://www.itee.lukasiewicz.gov.pl/",
     photo: ite,
@@ -155,7 +155,7 @@ const speakers: Speaker[] = [
   {
     id: "ks-speaker",
     name: "dr hab. inż. Krzysztof Śmiechowski, prof. UTH Rad",
-    desc: "Prezes Zarządu Radomskiej Rady FSNT-NOT ",
+    desc: "Prezes Zarządu Radomskiej Rady FSNT-NOT",
     lectures: ["Inżynier to jest ktoś!"],
     link: "https://radom.enot.pl/inne/zarzad-radomskiej-rady",
     photo: krzysztof_smiechowski,
@@ -171,7 +171,7 @@ const speakers: Speaker[] = [
   {
     id: "enot-speaker",
     name: "Radomska Rada Federacji Stowarzyszeń Naukowo – Technicznych",
-    desc: "Odbędą się dwie sesje, podczas których zostaną przyznane nagrody dla uczniów szkól podstawowych oraz średnich.",
+    desc: "Odbędą się dwie sesje w ramach programu Młudy Innowator, podczas których zostaną przyznane nagrody dla uczniów szkól podstawowych oraz średnich.",
     lectures: ["Młody Innowator"],
     link: "https://radom.enot.pl/inne/mlody-innowator-2",
     photo: not,

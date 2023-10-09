@@ -48,7 +48,7 @@ const SpeakerCard = forwardRef<HTMLDivElement, Speaker>(
           )}
           {desc.length > 160 ? (
             <button
-              title="Rozwiń opis"
+              title={`${isShortDescription ? "Rozwiń opis" : "Zwiń opis"} `}
               className="text-white mx-auto"
               style={{ marginTop: "-1rem" }}
               onClick={() => {
