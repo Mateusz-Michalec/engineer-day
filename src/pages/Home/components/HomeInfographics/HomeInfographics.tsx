@@ -45,8 +45,8 @@ const HomeInfographics = ({ ids, refsArray }: PropsType) => {
                 "Sesja plenarna: Jeśli czegoś nie wolno, a bardzo się chce – to można? (40-50 minut)"
               }
               image={images.home_speakers}
-              circleNumber={"8+"}
-              circleText={"prelegentów"}
+              circleNumber={"liczni"}
+              circleText={"prelegenci"}
               desc={
                 "Przedstawiciele branży inżynierskiej podzielą się swoimi doświadczeniami, wiedzą i przemyśleniami w dziedzinie technologii, innowacji i projektowania."
               }
@@ -68,13 +68,13 @@ const HomeInfographics = ({ ids, refsArray }: PropsType) => {
               ref={refsArray[2]}
               id={ids[2]}
               title={
-                "Warsztaty dla doradców zawodowych z placówek oświatowych oraz opiekunów praktyk zawodowych w przedsiębiorstwach (12.00-14.00)"
+                "Interaktywne warsztaty dedykowane doradcom zawodowym, nauczycielom akademickim oraz opiekunom praktyk zawodowych (12.00-14.00)"
               }
               image={images.home_learning}
               circleNumber={"3"}
               circleText={"firmy technologiczne"}
               desc={
-                "Podczas warsztatów uczestnicy zgłębią techniki i narzędzia wykorzystywane w doradztwie, będą miały okazję wymienić się doświadczeniami i spostrzeżeniami z branży oraz rozwijać swoje kompetencje interpersonalne. "
+                "Podczas warsztatów uczestnicy zgłębią techniki i narzędzia wykorzystywane w doradztwie, będą mieli okazję wymienić się doświadczeniami i spostrzeżeniami z branży oraz rozwijać swoje kompetencje interpersonalne. "
               }
             />
           </Row>

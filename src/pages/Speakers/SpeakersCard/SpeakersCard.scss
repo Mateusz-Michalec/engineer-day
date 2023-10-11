@@ -13,10 +13,8 @@
     border-radius: 50%;
 
     &--contain {
+      background: white;
       object-fit: contain;
-      height: auto;
-      width: auto;
-      border-radius: 0;
     }
   }
 }

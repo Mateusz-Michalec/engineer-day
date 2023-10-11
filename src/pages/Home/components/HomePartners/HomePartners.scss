@@ -6,7 +6,9 @@
 
     &-logo {
       display: block;
-      max-height: 80px;
+      min-height: 90px;
+      max-height: 90px;
+      background: white;
       max-width: 100%;
     }
 

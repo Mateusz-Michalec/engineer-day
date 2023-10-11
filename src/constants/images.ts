@@ -17,7 +17,7 @@ import exhibitions_logo_radom from "../assets/images/logo_radom.jpg";
 import eventProgram from "../assets/images/program.png";
 
 // Partners logos
-import iph from "../assets/images/partners/iph.png";
+import iph from "../assets/images/partners/iph.svg";
 import ite from "../assets/images/partners/ite.png";
 import not from "../assets/images/partners/not.jpg";
 import ppp from "../assets/images/partners/ppp.jpg";
@@ -113,7 +113,7 @@ const speakers: Speaker[] = [
     name: "dr Mirosław Żurek",
     desc: "Sieć Badawcza Łukasiewicz - Instytut Technologii Eksploatacji od ponad trzydziestu lat specjalizuje się w kreowaniu innowacyjności w obszarze budowy i eksploatacji maszyn, bezpieczeństwa technicznego i ochrony środowiska, a także opracowywaniu modelowych rozwiązań dotyczących programów ustawicznego kształcenia i doskonalenia kadr dla innowacyjnej gospodarki oraz transferu zaawansowanych technologii do zastosowań przemysłowych.",
     lectures: ["Wprowadzenie - co ja tutaj robię?", "Wiedzomania"],
-    link: "https://www.itee.lukasiewicz.gov.pl/",
+    link: "https://www.itee.lukasiewicz.gov.pl/obszary/centrum-badan-edukacji-zawodowej-i-zarzadzania-innowacjami",
     photo: ite,
   },
   {
@@ -133,7 +133,7 @@ const speakers: Speaker[] = [
     name: "dr hab. inż. Marcin Kostrzewa, prof. UTH Rad",
     desc: "Dziekan Wydziału Inżynierii Chemicznej i Towaroznawstwa",
     lectures: ["Inżynier to jest ktoś!"],
-    link: "https://wicit.uniwersytetradom.pl/wladze-wydzialu/",
+    link: "https://wicit.uniwersytetradom.pl/katedra-fizykochemii-i-technologii-materialow/",
     photo: marcin_kostrzewa,
   },
   {
@@ -141,7 +141,7 @@ const speakers: Speaker[] = [
     name: "dr inż. Przemysław Motyl",
     desc: "Prodziekan Wydziału Mechanicznego UR",
     lectures: ["Inżynier to jest ktoś!"],
-    link: "https://wm.uniwersytetradom.pl/",
+    link: "https://wm.uniwersytetradom.pl/wladze/#",
     photo: motyl_przemyslaw,
   },
   {

@@ -75,7 +75,9 @@ const SpeakerCard = forwardRef<HTMLDivElement, Speaker>(
           </div>
 
           <Button variant="outline-light mx-auto">
-            <Link to={link}>Dowiedz się więcej</Link>
+            <Link to={link} target="_blank">
+              Dowiedz się więcej
+            </Link>
           </Button>
         </article>
       </Col>
