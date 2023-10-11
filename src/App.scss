@@ -41,10 +41,6 @@
 
 a {
   color: white;
-
-  * {
-    transition: $transition-fast;
-  }
 }
 
 a,
@@ -60,10 +56,9 @@ a,
 button {
   border: none;
   background: none;
-  transition: all 0.15s $transition-fast;
 
-  &:hover a {
-    color: $accent-color-1;
+  * {
+    transition: $transition-fast;
   }
 }
 

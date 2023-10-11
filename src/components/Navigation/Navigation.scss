@@ -15,8 +15,8 @@
     font-weight: 600;
   }
 
-  a:hover * {
-    color: $accent-color-1;
+  &__btn:hover * {
+    color: $accent-color-1 !important;
   }
 }
 
@@ -30,8 +30,8 @@
     background-color: $accent-color-1;
     border: none;
 
-    a:hover * {
-      color: $accent-color-2;
+    &__btn:hover * {
+      color: $accent-color-2 !important;
     }
   }
 }
