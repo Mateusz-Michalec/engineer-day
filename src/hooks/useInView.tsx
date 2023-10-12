@@ -16,13 +16,14 @@ const useInView = (
         const element = entry.target.id;
 
         if (entry.isIntersecting) {
-          intersectedElements.current.add(element);
-          setElements((prev) => {
-            return {
+          if (!intersectedElements.current.has(element)) {
+            setElements((prev) => ({
               ...prev,
               [element]: true,
-            };
-          });
+            }));
+            intersectedElements.current.add(element);
+          }
+
           if (intersectedElements.current.size === refs.length)
             observer.disconnect();
         }
