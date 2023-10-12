@@ -58,7 +58,7 @@ const HomeInfographics = ({ ids, refsArray }: PropsType) => {
                 "Śladami radomskich inżynierów, czyli zwiedzanie strefy wystawców (60 minut)"
               }
               image={images.home_ehxibitors}
-              circleNumber={"20+"}
+              circleNumber={"32"}
               circleText={"wystawców"}
               desc={
                 "Współorganizatorzy oraz firmy technologiczne zaprezentują swoje produkty i rozwiązania, dając możliwość zapoznania się z najnowszymi trendami w świecie inżynierii."
