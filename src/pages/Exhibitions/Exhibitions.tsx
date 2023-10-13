@@ -89,12 +89,7 @@ const Exhibitions = () => {
 										<i className='bi bi-gear-fill exhibitions__map-dot-icon'></i>
 									) : null}
 								</div>
-								<ExhibitionTooltip
-									status={tooltipVisible === index}
-									index={index}
-									img={index % 2 === 0 ? images.exhibitions_logo_uth : images.exhibitions_logo_radom}
-									title={index % 2 === 0 ? 'Uniwersytet Radomski' : 'Urząd miejski w Radomiu'}
-								/>
+								<ExhibitionTooltip status={tooltipVisible === index} index={index} />
 							</div>
 						))}
 						{desktopDots.map((dot, index) => (
@@ -118,12 +113,7 @@ const Exhibitions = () => {
 										<i className='bi bi-gear-fill exhibitions__map-dot-icon'></i>
 									) : null}
 								</div>
-								<ExhibitionTooltip
-									status={tooltipVisible === index}
-									index={index}
-									img={index % 2 === 0 ? images.exhibitions_logo_uth : images.exhibitions_logo_radom}
-									title={index % 2 === 0 ? 'Uniwersytet Radomski' : 'Urząd miejski w Radomiu'}
-								/>
+								<ExhibitionTooltip status={tooltipVisible === index} index={index} />
 							</div>
 						))}
 					</div>

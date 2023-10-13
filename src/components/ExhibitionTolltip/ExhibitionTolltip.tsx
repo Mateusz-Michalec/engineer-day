@@ -1,12 +1,8 @@
-// import { Link } from 'react-router-dom'
 import './ExhibitionTolltip.scss'
-import { images } from '../../constants'
 
 const ExhibitionTolltip: React.FC<{
 	status: boolean
 	index: number
-	img?: string
-	title: string
 }> = props => {
 	const exhibitionsNames = [
 		'Stoisko 1',
@@ -25,15 +21,6 @@ const ExhibitionTolltip: React.FC<{
 		'Scena',
 		'Konsola',
 		'Warsztaty',
-	]
-	const exhibitionsImages = [
-		images.exhibition_1,
-		images.exhibition_2,
-		images.exhibition_3,
-		images.exhibition_4,
-		images.exhibition_5,
-		images.exhibition_6,
-		images.exhibition_7,
 	]
 
 	const exhibition1Members = [
