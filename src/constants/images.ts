@@ -12,7 +12,6 @@ import speakers_hero from '../assets/images/speakers/speakers_hero.svg'
 import exhibitions_hero from '../assets/images/exhibitions_hero.svg'
 import exhibitions_map from '../assets/images/exhibitions_map.png'
 import exhibitions_logo_uth from '../assets/images/ur.jpg'
-import exhibitions_logo_radom from '../assets/images/logo_radom.jpg'
 
 import eventProgram from '../assets/images/program.png'
 
@@ -191,7 +190,6 @@ export default {
 	exhibitions_hero,
 	exhibitions_map,
 	exhibitions_logo_uth,
-	exhibitions_logo_radom,
 	partners,
 	eventProgram,
 	speakers,
