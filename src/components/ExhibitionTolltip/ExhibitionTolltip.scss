@@ -4,11 +4,11 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 200px;
-	height: 180px;
+	width: 300px;
+	height: 240px;
 	position: absolute;
-	top: 50%;
-	left: 100%;
+	top: 65%;
+	left: 101%;
 	transform: translate(-50%, -50%);
 	border: 1px solid gray;
 	border-radius: 5px;
@@ -17,13 +17,24 @@
 	transition: transform 0.3s;
 	z-index: 10;
 
-	&-logo {
-		width: 100px;
-	}
-
 	&-title {
 		text-align: center;
-		font-size: 13px;
+		font-size: 20px;
+		margin-bottom: -2px;
+		font-weight: bold;
+		color: $dark-shade;
+	}
+
+	&-icon{
+		font-size: 50px;
+		font-weight: bold;
+		color: $accent-color-1;
+	}
+
+	&-list{
+		width: 100%;
+		text-align: left;
+		font-size: 9.2px;
 	}
 
 	&-link {
@@ -41,19 +52,25 @@
 
 @media (min-width: 768px) {
 	.tolltip {
-		top: 49%;
+		top: 63%;
 		left: 50%;
-		width: 280px;
+		width: 400px;
 		height: 250px;
 		&-logo {
-			width: 150px;
-		}
-		&-title {
-			font-size: 16px;
+			width: 390px;
+			height: 150px;
+			object-fit: contain;
 		}
 
-		&-link {
-			font-size: 12px;
+		&-icon{
+			font-size: 60px;
+		}
+		&-title {
+			font-size: 20px;
+		}
+
+		&-list{
+			font-size: 10.8px;
 		}
 	}
 }
