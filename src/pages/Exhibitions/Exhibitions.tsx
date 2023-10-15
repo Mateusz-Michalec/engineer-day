@@ -9,7 +9,7 @@ import ExhibitionTooltip from '../../components/ExhibitionTolltip/ExhibitionToll
 import ActionBar from '../../components/ActionBar/ActionBar'
 
 const Exhibitions = () => {
-	const [tooltipVisible, setTooltipVisible] = useState<number | null>(11)
+	const [tooltipVisible, setTooltipVisible] = useState<number | null>(20)
 	const hero = useRef<HTMLDivElement>(null)
 
 	const intersection = useInView([hero])
@@ -22,6 +22,29 @@ const Exhibitions = () => {
 	const desktopDots = useDotsGenerator('desktop')
 
 	const isMobile = window.innerWidth < 992 ? true : false
+
+	const ExhibitionsTitles = [
+		'A1',
+		'B1',
+		'B2',
+		'B3',
+		'B4',
+		'B5',
+		'B6',
+		'B7',
+		'B8',
+		'C1',
+		'C2',
+		'D1',
+		'D2',
+		'D3',
+		'D4',
+		'E1',
+		'E2',
+		'E3',
+		'F1',
+		'F2',
+	]
 
 	return (
 		<div className='exhibitions'>
@@ -75,18 +98,12 @@ const Exhibitions = () => {
 									style={{ top: dot.top, left: dot.left }}
 									onMouseEnter={() => setTooltipVisible(index)}
 									onClick={() => setTooltipVisible(index)}>
-									{index < 7 ? (
-										<p className='exhibitions__map-dot-index'>{index + 1}</p>
-									) : index >= 7 && index < 12 ? (
-										<i className='bi bi-door-open-fill exhibitions__map-dot-icon'></i>
-									) : index === 12 ? (
-										<i className='bi bi-people-fill exhibitions__map-dot-icon'></i>
-									) : index === 13 ? (
+									{index < ExhibitionsTitles.length ? (
+										<p className='exhibitions__map-dot-index'>{ExhibitionsTitles[index]}</p>
+									) : index === ExhibitionsTitles.length ? (
 										<i className='bi bi-mic-fill exhibitions__map-dot-icon'></i>
-									) : index === 14 ? (
-										<i className='bi bi-volume-up-fill exhibitions__map-dot-icon'></i>
-									) : index === 15 ? (
-										<i className='bi bi-gear-fill exhibitions__map-dot-icon'></i>
+									) : index === ExhibitionsTitles.length + 1 ? (
+										<i className='bi bi-people-fill exhibitions__map-dot-icon'></i>
 									) : null}
 								</div>
 								<ExhibitionTooltip status={tooltipVisible === index} index={index} />
@@ -99,20 +116,15 @@ const Exhibitions = () => {
 									style={{ top: dot.top, left: dot.left }}
 									onMouseEnter={() => setTooltipVisible(index)}
 									onClick={() => setTooltipVisible(index)}>
-									{index < 7 ? (
-										<p className='exhibitions__map-dot-index'>{index + 1}</p>
-									) : index >= 7 && index < 12 ? (
-										<i className='bi bi-door-open-fill exhibitions__map-dot-icon'></i>
-									) : index === 12 ? (
-										<i className='bi bi-people-fill exhibitions__map-dot-icon'></i>
-									) : index === 13 ? (
+									{index < ExhibitionsTitles.length ? (
+										<p className='exhibitions__map-dot-index'>{ExhibitionsTitles[index]}</p>
+									) : index === ExhibitionsTitles.length ? (
 										<i className='bi bi-mic-fill exhibitions__map-dot-icon'></i>
-									) : index === 14 ? (
-										<i className='bi bi-volume-up-fill exhibitions__map-dot-icon'></i>
-									) : index === 15 ? (
-										<i className='bi bi-gear-fill exhibitions__map-dot-icon'></i>
+									) : index === ExhibitionsTitles.length + 1 ? (
+										<i className='bi bi-people-fill exhibitions__map-dot-icon'></i>
 									) : null}
 								</div>
+
 								<ExhibitionTooltip status={tooltipVisible === index} index={index} />
 							</div>
 						))}
@@ -121,61 +133,53 @@ const Exhibitions = () => {
 			</section>
 			<section className='exhibitions__members'>
 				<Container>
-					<h2 className='fw-bold text-center exhibitions__members-title'>Zaproszone przedsiębiorstwa</h2>
+					<h2 className='fw-bold text-center exhibitions__members-title'>Stoiska wystawców</h2>
 					<div className='exhibitions__members-box'>
 						<div className='exhibitions__members-box-item'>
-							<h3 className='exhibitions__members-box-item-title'>Stoisko 1</h3>
+							<h3 className='exhibitions__members-box-item-title'>Stoiska A</h3>
 							<img
-								src={images.exhibition_1}
-								alt='Przedsiębiorstwa na stoisku 1'
+								src={images.exhibition_a}
+								alt='Przedsiębiorstwa na stoisku a'
 								className='exhibitions__members-box-item-img'
 							/>
 						</div>
 						<div className='exhibitions__members-box-item'>
-							<h3 className='exhibitions__members-box-item-title'>Stoisko 2</h3>
+							<h3 className='exhibitions__members-box-item-title'>Stoiska B</h3>
 							<img
-								src={images.exhibition_2}
-								alt='Przedsiębiorstwa na stoisku 2'
+								src={images.exhibition_b}
+								alt='Przedsiębiorstwa na stoisku b'
 								className='exhibitions__members-box-item-img'
 							/>
 						</div>
 						<div className='exhibitions__members-box-item'>
-							<h3 className='exhibitions__members-box-item-title'>Stoisko 3</h3>
+							<h3 className='exhibitions__members-box-item-title'>Stoiska C</h3>
 							<img
-								src={images.exhibition_3}
-								alt='Przedsiębiorstwa na stoisku 3'
+								src={images.exhibition_c}
+								alt='Przedsiębiorstwa na stoisku C'
 								className='exhibitions__members-box-item-img'
 							/>
 						</div>
 						<div className='exhibitions__members-box-item'>
-							<h3 className='exhibitions__members-box-item-title'>Stoisko 4</h3>
+							<h3 className='exhibitions__members-box-item-title'>Stoiska D</h3>
 							<img
-								src={images.exhibition_4}
-								alt='Przedsiębiorstwa na stoisku 4'
+								src={images.exhibition_d}
+								alt='Przedsiębiorstwa na stoisku d'
 								className='exhibitions__members-box-item-img'
 							/>
 						</div>
 						<div className='exhibitions__members-box-item'>
-							<h3 className='exhibitions__members-box-item-title'>Stoisko 5</h3>
+							<h3 className='exhibitions__members-box-item-title'>Stoiska E</h3>
 							<img
-								src={images.exhibition_5}
-								alt='Przedsiębiorstwa na stoisku 5'
+								src={images.exhibition_e}
+								alt='Przedsiębiorstwa na stoisku e'
 								className='exhibitions__members-box-item-img'
 							/>
 						</div>
 						<div className='exhibitions__members-box-item'>
-							<h3 className='exhibitions__members-box-item-title'>Stoisko 6</h3>
+							<h3 className='exhibitions__members-box-item-title'>Stoiska F</h3>
 							<img
-								src={images.exhibition_6}
-								alt='Przedsiębiorstwa na stoisku 6'
-								className='exhibitions__members-box-item-img'
-							/>
-						</div>
-						<div className='exhibitions__members-box-item'>
-							<h3 className='exhibitions__members-box-item-title'>Stoisko 7</h3>
-							<img
-								src={images.exhibition_7}
-								alt='Przedsiębiorstwa na stoisku 7'
+								src={images.exhibition_f}
+								alt='Przedsiębiorstwa na stoisku f'
 								className='exhibitions__members-box-item-img'
 							/>
 						</div>

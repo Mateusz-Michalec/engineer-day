@@ -35,13 +35,35 @@ import krzysztof_smiechowski from '../assets/images/speakers/krzysztof_smiechows
 import studenci from '../assets/images/speakers/studenci.jpg'
 import motyl_przemyslaw from '../assets/images/speakers/przemyslaw_motyl.jpg'
 
-import exhibition_1 from '../assets/images/exhibition_1.png'
-import exhibition_2 from '../assets/images/exhibition_2.png'
-import exhibition_3 from '../assets/images/exhibition_3.png'
-import exhibition_4 from '../assets/images/exhibition_4.png'
-import exhibition_5 from '../assets/images/exhibition_5.png'
-import exhibition_6 from '../assets/images/exhibition_6.png'
-import exhibition_7 from '../assets/images/exhibition_7.png'
+//Exhibitions logo
+
+import exhibition_a from '../assets/images/exhibition_a.png'
+import exhibition_b from '../assets/images/exhibition_b.png'
+import exhibition_c from '../assets/images/exhibition_c.png'
+import exhibition_d from '../assets/images/exhibition_d.png'
+import exhibition_e from '../assets/images/exhibition_e.png'
+import exhibition_f from '../assets/images/exhibition_f.png'
+
+import logo_1 from '../assets/images/logo-1.jpg'
+import logo_2 from '../assets/images/logo-2.png'
+import logo_3 from '../assets/images/logo-3.png'
+import logo_4 from '../assets/images/logo-4.png'
+import logo_5 from '../assets/images/logo-5.png'
+import logo_6 from '../assets/images/logo-6.png'
+import logo_7 from '../assets/images/logo-7.png'
+import logo_8 from '../assets/images/logo-8.png'
+import logo_9 from '../assets/images/logo-9.png'
+import logo_10 from '../assets/images/logo-10.jpg'
+import logo_11 from '../assets/images/logo-11.jpg'
+import logo_12 from '../assets/images/logo-12.png'
+import logo_13 from '../assets/images/logo-13.png'
+import logo_14 from '../assets/images/logo-14.jpg'
+import logo_15 from '../assets/images/logo-15.png'
+import logo_16 from '../assets/images/logo-16.jpg'
+import logo_17 from '../assets/images/logo-17.png'
+import logo_18 from '../assets/images/logo-18.jpg'
+import logo_19 from '../assets/images/logo-19.png'
+
 
 type Partners = {
 	img: string
@@ -193,11 +215,29 @@ export default {
 	partners,
 	eventProgram,
 	speakers,
-	exhibition_1,
-	exhibition_2,
-	exhibition_3,
-	exhibition_4,
-	exhibition_5,
-	exhibition_6,
-	exhibition_7,
+	exhibition_a,
+	exhibition_b,
+	exhibition_c,
+	exhibition_d,
+	exhibition_e,
+	exhibition_f,
+	logo_1,
+	logo_2,
+	logo_3,
+	logo_4,
+	logo_5,
+	logo_6,
+	logo_7,
+	logo_8,
+	logo_9,
+	logo_10,
+	logo_11,
+	logo_12,
+	logo_13,
+	logo_14,
+	logo_15,
+	logo_16,
+	logo_17,
+	logo_18,
+	logo_19,
 }
