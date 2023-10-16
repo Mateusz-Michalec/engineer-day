@@ -149,7 +149,7 @@ const Exhibitions = () => {
           </div>
         </Container>
       </section>
-      <section className="exhibitions__members">
+      <section className="exhibitions__members mb-5">
         <Container>
           <h2 className="fw-bold text-center exhibitions__members-title">
             Stoiska wystawców

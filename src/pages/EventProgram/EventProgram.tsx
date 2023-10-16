@@ -14,7 +14,7 @@ const EventProgram = () => {
   }, [intersection]);
 
   return (
-    <section className="event-program">
+    <section className="event-program pb-5">
       <Container>
         <img
           id="eventProgram"

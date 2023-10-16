@@ -74,7 +74,7 @@ const Speakers = () => {
           ></path>
         </svg>
       </section>
-      <section className="speakers__cards px-4">
+      <section className="speakers__cards px-4 mb-5">
         <Container>
           <Row className="gy-5 justify-content-center">
             {images.speakers.map((speaker, i) => (
