@@ -154,7 +154,7 @@ const speakers: Speaker[] = [
 
   {
     id: "mk-speaker",
-    name: "dr hab. inż. Marcin Kostrzewa, prof. prof. URad",
+    name: "dr hab. inż. Marcin Kostrzewa, prof. URad",
     desc: "Dziekan Wydziału Inżynierii Chemicznej i Towaroznawstwa",
     lectures: ["Inżynier to jest ktoś!"],
     link: "https://wicit.uniwersytetradom.pl/katedra-fizykochemii-i-technologii-materialow/",
