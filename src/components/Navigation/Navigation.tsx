@@ -1,43 +1,55 @@
 import "./Navigation.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
+const routes = [
+  {
+    path: "/",
+    text: "Home",
+    icon: "bi-house-fill",
+  },
+  {
+    path: "/program-wydarzenia",
+    text: "Program",
+    icon: "bi-info-circle-fill",
+  },
+  {
+    path: "/mapa-stoisk",
+    text: "Mapa",
+    icon: "bi-map-fill",
+  },
+  {
+    path: "/prelegaci",
+    text: "Mówcy",
+    icon: "bi-people-fill",
+  },
+];
 const Navigation = () => {
+  const route = useLocation().pathname;
+
   return (
     <nav className="navigation d-flex">
       <div className="navigation__btns fs-6 d-flex w-100 justify-content-evenly">
-        <button className="text-white navigation__btn">
-          <Link to="/" className="d-flex flex-column align-items-center">
-            <i className="bi d-flex fs-4 bi-house-fill"></i>
-            <span>Home</span>
-          </Link>
-        </button>
-        <button className="text-white navigation__btn">
-          <Link
-            to="/program-wydarzenia"
-            className="d-flex flex-column align-items-center"
-          >
-            <i className="bi d-flex fs-4 bi-info-circle-fill"></i>
-            <span>Program</span>
-          </Link>
-        </button>
-        <button className="text-white navigation__btn">
-          <Link
-            to="mapa-stoisk"
-            className="d-flex flex-column align-items-center"
-          >
-            <i className="bi d-flex fs-4 bi-map-fill"></i>
-            <span>Mapa</span>
-          </Link>
-        </button>
-        <button className="text-white navigation__btn">
-          <Link
-            to="prelegaci"
-            className="d-flex flex-column align-items-center"
-          >
-            <i className="bi d-flex fs-4 bi-people-fill"></i>
-            <span>Mówcy</span>
-          </Link>
-        </button>
+        {routes.map((routeObj) => (
+          <button key={routeObj.text} className="text-white navigation__btn">
+            <Link
+              to={routeObj.path}
+              className="d-flex flex-column align-items-center"
+            >
+              <i
+                className={`${
+                  routeObj.path === route ? "navigation__active" : ""
+                } bi d-flex fs-4 ${routeObj.icon}`}
+              ></i>
+              <span
+                className={`${
+                  routeObj.path === route ? "navigation__active" : ""
+                }`}
+              >
+                {routeObj.text}
+              </span>
+            </Link>
+          </button>
+        ))}
       </div>
     </nav>
   );

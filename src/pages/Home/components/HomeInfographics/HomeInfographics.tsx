@@ -58,7 +58,7 @@ const HomeInfographics = ({ ids, refsArray }: PropsType) => {
                 "Śladami radomskich inżynierów, czyli zwiedzanie strefy wystawców (60 minut)"
               }
               image={images.home_ehxibitors}
-              circleNumber={"32"}
+              circleNumber={"30+"}
               circleText={"wystawców"}
               desc={
                 "Współorganizatorzy oraz firmy technologiczne zaprezentują swoje produkty i rozwiązania, dając możliwość zapoznania się z najnowszymi trendami w świecie inżynierii."
@@ -71,7 +71,7 @@ const HomeInfographics = ({ ids, refsArray }: PropsType) => {
                 "Interaktywne warsztaty dedykowane doradcom zawodowym, nauczycielom akademickim oraz opiekunom praktyk zawodowych (12.00-14.00)"
               }
               image={images.home_learning}
-              circleNumber={"3"}
+              circleNumber={"znane"}
               circleText={"firmy technologiczne"}
               desc={
                 "Podczas warsztatów uczestnicy zgłębią techniki i narzędzia wykorzystywane w doradztwie, będą mieli okazję wymienić się doświadczeniami i spostrzeżeniami z branży oraz rozwijać swoje kompetencje interpersonalne. "

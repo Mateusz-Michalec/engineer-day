@@ -4,7 +4,7 @@ import "./Speakers.scss";
 import { images } from "../../constants";
 import useInView from "../../hooks/useInView";
 import { showElement } from "../../utils/animate";
-import ActionBar from "../../components/ActionBar/ActionBar";
+
 import SpeakerCard from "./SpeakersCard/SpeakerCard";
 
 const Speakers = () => {
@@ -41,8 +41,7 @@ const Speakers = () => {
   return (
     <>
       <section className="speakers">
-        <ActionBar title="Mówcy" />
-        <div className="speakers__hero text-white px-4 py-5">
+        <div className="speakers__hero text-white px-4 pb-4">
           <Container ref={hero} id="hero" className="hidden-opacity">
             <Row className="align-items-center gy-4">
               <Col xs={12} md={6}>

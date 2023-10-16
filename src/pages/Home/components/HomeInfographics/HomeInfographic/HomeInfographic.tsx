@@ -31,7 +31,7 @@ const HomeInfographic = forwardRef(
         >
           <img src={image} className="home__images" alt={title} />
           <h5 className="text-center d-flex flex-column justify-conent-center align-items-center gap-2">
-            <span className="fs-2 shadow-lg text-light home__infographic-number">
+            <span className="fs-3 shadow-lg text-light home__infographic-number">
               {" "}
               {circleNumber}
             </span>{" "}

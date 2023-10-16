@@ -19,7 +19,7 @@ const HomePartners = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
           Współorganizatorzy
         </h2>
 
-        {images.partners.map((partner) => (
+        {images.partners.map((partner, i) => (
           <Link
             target="_blank"
             key={partner.name}
@@ -28,7 +28,12 @@ const HomePartners = forwardRef<HTMLDivElement, PropsType>(({ id }, ref) => {
           >
             <img
               src={partner.img}
-              className="home__partner-logo"
+              className={`home__partner-logo p-2 rounded ${
+                i === images.partners.length - 1 ||
+                i === images.partners.length - 2
+                  ? "home__partner-logo--long"
+                  : ""
+              }`}
               alt={partner.name}
               title={partner.name}
             />

@@ -11,6 +11,10 @@
   border-radius: 2rem 2rem 0 0;
   border-top: 3px solid $accent-color-1;
 
+  &__active {
+    color: $accent-color-1;
+  }
+
   &__btn {
     font-weight: 600;
   }
@@ -29,6 +33,10 @@
     border-radius: 0 0 2rem 2rem;
     background-color: $accent-color-1;
     border: none;
+
+    &__active {
+      color: $accent-color-2;
+    }
 
     &__btn:hover * {
       color: $accent-color-2 !important;

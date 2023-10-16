@@ -34,8 +34,11 @@
   letter-spacing: 0.5px;
   overflow-x: hidden;
 
-  .app:not(:has(.home)) {
-    margin-top: $navigation-height;
+  .home__hero,
+  .event-program,
+  .exhibitions__hero,
+  .speakers__hero {
+    padding-top: 2rem;
   }
 }
 
@@ -153,8 +156,11 @@ svg {
   #root {
     padding-bottom: 0rem;
 
-    .app:not(:has(.home)) {
-      margin-top: $navigation-height * 2;
+    .home__hero,
+    .event-program,
+    .exhibitions__hero,
+    .speakers__hero {
+      padding-top: $navigation-height + 2rem;
     }
   }
 }

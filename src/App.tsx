@@ -16,7 +16,7 @@ function App() {
         </Route>
         <Route path="prelegaci" element={<Speakers />} />
         <Route path="program-wydarzenia" element={<EventProgram />} />
-        <Route path="*" element={<Layout />} />
+        <Route path="*" element={<Home />} />
       </Route>
     </Routes>
   );

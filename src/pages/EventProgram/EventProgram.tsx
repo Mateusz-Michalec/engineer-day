@@ -3,7 +3,6 @@ import { Container } from "react-bootstrap";
 import { images } from "../../constants";
 import useInView from "../../hooks/useInView";
 import { showElement } from "../../utils/animate";
-import ActionBar from "../../components/ActionBar/ActionBar";
 
 const EventProgram = () => {
   const eventProgram = useRef<HTMLImageElement>(null);
@@ -15,8 +14,7 @@ const EventProgram = () => {
   }, [intersection]);
 
   return (
-    <section className="event-program pt-5">
-      <ActionBar title="Szczegółowy program wydarzenia" />
+    <section className="event-program">
       <Container>
         <img
           id="eventProgram"

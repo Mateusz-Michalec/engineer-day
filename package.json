@@ -2,7 +2,7 @@
   "name": "radomski-dzien-inzyniera",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mateusz-michalec.github.io/radomski-dzien-inzyniera",
+  "homepage": "/radomski-dzien-inzyniera",
   "type": "module",
   "scripts": {
     "dev": "vite",
