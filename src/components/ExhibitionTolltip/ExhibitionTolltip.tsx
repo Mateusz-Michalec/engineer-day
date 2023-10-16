@@ -16,6 +16,7 @@ const ExhibitionTolltip: React.FC<{
 		'Stoisko B6',
 		'Stoisko B7',
 		'Stoisko B8',
+		'Stoisko B9',
 		'Stoisko C1',
 		'Stoisko C2',
 		'Stoisko D1',
@@ -43,6 +44,7 @@ const ExhibitionTolltip: React.FC<{
 		'GGG Sp. z o.o.',
 		'PPUS „KMP” Marcin Piotrowski',
 		'STALKO Sp. z o.o. sp.k.',
+		'Gabec',
 	]
 
 	const exhibitionA1Links = [
@@ -57,6 +59,7 @@ const ExhibitionTolltip: React.FC<{
 		'https://ggg.pl',
 		'https://radomskibiznes.pl/kmp',
 		'https://stalko.com',
+		'https://gabec.pl',
 	]
 
 	const exhibitionC1Members = [
@@ -75,12 +78,13 @@ const ExhibitionTolltip: React.FC<{
 		'Wydział Transportu, Elektrotechniki i Informatyki (URad.)',
 		'Zakład Usług Technicznych Energoaudyt Sp. z o.o.',
 		'Radwag Wagi Elektroniczne Witold Lewandowski',
+		'BETiS',
 		'Fundacja Platforma Przemysłu Przyszłości',
-		'Döhler Polska Sp. z o.o.',
-		'Wydział Inżynierii Chemicznej i Towaroznawstwa (Urad.)',
+		'Döhler Sp. z o.o.',
+		'Wydział Inżynierii Chemicznej i Towaroznawstwa (URad.)',
 		'PW Krystian Sp. z o.o.',
 		'Faurecia Automotive Polska SA',
-		'Wydział Mechaniczny (Urad.)',
+		'Wydział Mechaniczny (URad.)',
 		'Kratki.pl Marek Bal',
 		'Techmatik SA',
 		'Radomska Rada Federacji Stowarzyszeń Naukowo – Technicznych NOT',
@@ -96,6 +100,7 @@ const ExhibitionTolltip: React.FC<{
 		'https://wteii.uniwersytetradom.pl',
 		'https://www.zutenergoaudyt.com.pl/pl/',
 		'https://sklep.radwag.com/?gclid=Cj0KCQjwm66pBhDQARIsALIR2zBkgez6yJ9iS2j0FWBfhHY3570xoneood9COJAQn8MkDfT-RAnAWP0aAufKEALw_wcB',
+		'https://ekspertyzy-szkolenia.pl',
 		'https://przemyslprzyszlosci.gov.pl',
 		'https://www.doehler.pl',
 		'https://wicit.uniwersytetradom.pl',
@@ -130,6 +135,7 @@ const ExhibitionTolltip: React.FC<{
 		images.logo_17,
 		images.logo_18,
 		images.logo_19,
+		images.logo_20,
 	]
 
 	const renderExhibitionMembers = () => {
@@ -138,33 +144,33 @@ const ExhibitionTolltip: React.FC<{
 				<>
 					<ul className='tolltip-list'>
 						{exhibitionA1Members.map((member, index) => (
-							<Link to={exhibitionA1Links[index]} className='tolltip-link'>
-								<li key={index}>{member}</li>
+							<Link key={member} to={exhibitionA1Links[index]} className='tolltip-link'>
+								<li>{member}</li>
 							</Link>
 						))}
 					</ul>
 				</>
 			)
-		} else if (props.index === 9) {
+		} else if (props.index === 10) {
 			return (
 				<>
 					<ul className='tolltip-list'>
 						{exhibitionC1Members.map((member, index) => (
-							<Link to={exhibitionC1Links[index]} className='tolltip-link'>
-								<li key={index}>{member}</li>
+							<Link key={member} to={exhibitionC1Links[index]} className='tolltip-link'>
+								<li>{member}</li>
 							</Link>
 						))}
 					</ul>
 					<img src={exhibitionsImages[props.index - 1]} alt='Logo firmy' className='tolltip-img' />
 				</>
 			)
-		} else if (props.index === 20) {
-			return <i className={exhibitionsIcons[0]} />
 		} else if (props.index === 21) {
+			return <i className={exhibitionsIcons[0]} />
+		} else if (props.index === 22) {
 			return <i className={exhibitionsIcons[1]} />
 		} else {
 			for (let i = 0; i < exhibitionOthersMembers.length; i++) {
-				if (props.index >= 9) {
+				if (props.index >= 10) {
 					return (
 						<>
 							<Link to={exhibitionOtherLinks[props.index - 2]} className='tolltip-link'>

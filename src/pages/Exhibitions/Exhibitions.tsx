@@ -9,7 +9,7 @@ import ExhibitionTooltip from '../../components/ExhibitionTolltip/ExhibitionToll
 import ActionBar from '../../components/ActionBar/ActionBar'
 
 const Exhibitions = () => {
-	const [tooltipVisible, setTooltipVisible] = useState<number | null>(20)
+	const [tooltipVisible, setTooltipVisible] = useState<number | null>(21)
 	const hero = useRef<HTMLDivElement>(null)
 
 	const intersection = useInView([hero])
@@ -33,6 +33,7 @@ const Exhibitions = () => {
 		'B6',
 		'B7',
 		'B8',
+		'B9',
 		'C1',
 		'C2',
 		'D1',

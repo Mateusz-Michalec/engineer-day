@@ -53,16 +53,17 @@ import logo_6 from '../assets/images/logo-6.png'
 import logo_7 from '../assets/images/logo-7.png'
 import logo_8 from '../assets/images/logo-8.png'
 import logo_9 from '../assets/images/logo-9.png'
-import logo_10 from '../assets/images/logo-10.jpg'
+import logo_10 from '../assets/images/logo-10.png'
 import logo_11 from '../assets/images/logo-11.jpg'
-import logo_12 from '../assets/images/logo-12.png'
+import logo_12 from '../assets/images/logo-12.jpg'
 import logo_13 from '../assets/images/logo-13.png'
-import logo_14 from '../assets/images/logo-14.jpg'
-import logo_15 from '../assets/images/logo-15.png'
-import logo_16 from '../assets/images/logo-16.jpg'
-import logo_17 from '../assets/images/logo-17.png'
-import logo_18 from '../assets/images/logo-18.jpg'
-import logo_19 from '../assets/images/logo-19.png'
+import logo_14 from '../assets/images/logo-14.png'
+import logo_15 from '../assets/images/logo-15.jpg'
+import logo_16 from '../assets/images/logo-16.png'
+import logo_17 from '../assets/images/logo-17.jpg'
+import logo_18 from '../assets/images/logo-18.png'
+import logo_19 from '../assets/images/logo-19.jpg'
+import logo_20 from '../assets/images/logo-20.png'
 
 
 type Partners = {
@@ -240,4 +241,5 @@ export default {
 	logo_17,
 	logo_18,
 	logo_19,
+	logo_20,
 }
