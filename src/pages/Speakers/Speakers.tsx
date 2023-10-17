@@ -52,7 +52,7 @@ const Speakers = () => {
                 />
               </Col>
               <Col xs={12} md={6}>
-                <h1 className="fw-bold">Prelegaci</h1>
+                <h1 className="fw-bold">Prelegenci</h1>
                 <p className="mb-0">
                   Poznaj mówców, którzy będą dzielić się swoją wiedzą i
                   doświadczeniem podczas Radomskiego Dnia Inżyniera.{" "}

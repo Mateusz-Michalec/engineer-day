@@ -14,7 +14,7 @@ function App() {
         <Route path="mapa-stoisk">
           <Route index element={<Exhibitions />} />
         </Route>
-        <Route path="prelegaci" element={<Speakers />} />
+        <Route path="prelegenci" element={<Speakers />} />
         <Route path="program-wydarzenia" element={<EventProgram />} />
         <Route path="*" element={<Home />} />
       </Route>

@@ -18,7 +18,7 @@ const routes = [
     icon: "bi-map-fill",
   },
   {
-    path: "/prelegaci",
+    path: "/prelegenci",
     text: "Mówcy",
     icon: "bi-people-fill",
   },

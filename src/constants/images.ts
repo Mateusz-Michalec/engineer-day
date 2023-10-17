@@ -154,7 +154,7 @@ const speakers: Speaker[] = [
 
   {
     id: "mk-speaker",
-    name: "dr hab. inż. Marcin Kostrzewa, prof. URad",
+    name: "dr hab. inż. Marcin Kostrzewa, prof. URad.",
     desc: "Dziekan Wydziału Inżynierii Chemicznej i Towaroznawstwa",
     lectures: ["Inżynier to jest ktoś!"],
     link: "https://wicit.uniwersytetradom.pl/katedra-fizykochemii-i-technologii-materialow/",
@@ -179,7 +179,7 @@ const speakers: Speaker[] = [
   },
   {
     id: "tp-speaker",
-    name: "dr hab. inż. Tomasz Perzyński, prof. URad",
+    name: "dr hab. inż. Tomasz Perzyński, prof. URad.",
     desc: "Dziekan Wydziału Transportu, Elektrotechniki i Informatyki",
     lectures: ["Inżynier to jest ktoś!"],
     link: "https://uniwersytetradom.pl/2021/04/21/dziekan-wteii-dr-hab-inz-tomasz-perzynski-prof-uth-rad-gosciem-radia-radom/",
